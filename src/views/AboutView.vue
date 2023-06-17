@@ -1,6 +1,11 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+    <div
+      style="
+        background-image: url('https://mudanews.com/wp-content/uploads/2020/12/coming-soon.png');
+      "
+      class="about w-30 h-30 bg-cover bg-center bg-opacity-75 flex justify-center items-center"
+    ></div>
   </div>
 </template>
 
