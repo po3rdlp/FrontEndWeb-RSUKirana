@@ -3,7 +3,7 @@
     <nav class="bg-opacity-1 relative bg-gradient-to-r from-fuchsia-300 to-pink-500">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
         <a class="flex items-center">
-          <img src="../../img/Logo.png" class="h-10 mr-5" alt="Flowbite Logo" />
+          <img src="../img/Logo.png" class="h-10 mr-5" alt="Flowbite Logo" />
           <div class="grid w-12">
             <span
               class="self-center text-2x1 md:text-2xl lg:text-2xl font-semibold whitespace-nowrap text-black"
