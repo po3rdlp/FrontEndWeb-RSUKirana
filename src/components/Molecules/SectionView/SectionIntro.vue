@@ -19,8 +19,16 @@
           </div>
         </div>
         <div class="carousel-item w-full bg-white opacity-80">
-          <div id="slide2" class="w-full items-center justify-center flex bg-white h-screen">
-            <p class="text-sm md:lg:text-5xl font-bold">UNDER DEVELOPMENT</p>
+          <div
+            id="slide2"
+            class="w-full items-center justify-center flex flex-col bg-white h-screen"
+          >
+            <h1 class="text-sm md:text-3xl lg:text-5xl font-bold">Jadikan Kami Sahabat Anda</h1>
+            <button
+              class="btn btn-info max-w-sm bg-gradient-to-l from-pink-100 to-fuchsia-300 mt-3"
+            >
+              Lebih Banyak Tentang Kami
+            </button>
           </div>
         </div>
       </div>

@@ -79,12 +79,9 @@
             </li>
             <li>
               <a>
-                <RouterLink
-                  to="/about"
-                  class="btn btn-ghost md:bg-transparent hover:font-light"
-                  aria-current="page"
-                >
-                  TENTANG KAMI
+                <RouterLink to="/about" class="btn hover:font-light" aria-current="page">
+                  <FontAwesomeIcon icon="fa-solid fa-calendar-days" />
+                  <span>Registrasi</span>
                 </RouterLink></a
               >
             </li>
