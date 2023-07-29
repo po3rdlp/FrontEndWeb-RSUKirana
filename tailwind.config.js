@@ -21,7 +21,7 @@ module.exports = {
 
           neutral: '#2a323c',
 
-          'base-100': '#FFCAEA',
+          'base-100': 'white',
 
           info: '#3abff8',
 
@@ -32,7 +32,8 @@ module.exports = {
           error: '#f87272'
         },
         fontFamily: {
-          sans: ['Open Sans', 'system-ui', 'sans-serif']
+          sans: ['Open Sans', 'system-ui', 'sans-serif'],
+          brush: ['"Brush Script MT"', 'cursive']
         }
       }
     ]

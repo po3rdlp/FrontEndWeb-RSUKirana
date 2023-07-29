@@ -1,8 +1,11 @@
 <template>
   <main>
     <div>
-      <div class="bg-[url('../components/img/tiomothy-swope.jpg')] bg-cover bg-accent-focus">
+      <div>
         <SectionIntro />
+      </div>
+      <div>
+        <SectionFacilities />
       </div>
     </div>
   </main>
@@ -10,8 +13,9 @@
 
 <script>
 import SectionIntro from '../components/Molecules/SectionView/SectionIntro.vue'
+import SectionFacilities from '../components/Molecules/SectionView/SectionFacilities.vue'
 export default {
-  components: { SectionIntro },
+  components: { SectionIntro, SectionFacilities },
   data() {
     return {}
   },

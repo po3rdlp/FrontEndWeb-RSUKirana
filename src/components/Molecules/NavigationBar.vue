@@ -1,22 +1,20 @@
 <template>
   <div class="font-sans">
-    <nav class="bg-opacity-1 relative bg-gradient-to-r from-fuchsia-300 to-pink-500">
+    <nav class="relative">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
         <a class="flex items-center">
           <img src="../img/Logo.png" class="h-10 mr-5" alt="Flowbite Logo" />
           <div class="grid w-12">
             <span
-              class="self-center text-2x1 md:text-2xl lg:text-2xl font-semibold whitespace-nowrap text-black"
-              >RSIA KIRANA MANADO</span
+              class="self-center text-2x1 md:text-2xl lg:text-2xl font-semibold whitespace-nowrap text-pink-400"
+              >RSIA KIRANA</span
             >
             <div class="grid sm:text-base/loose">
               <div class="flex flex-col sm:flex sm:flex-row md:flex md:flex-row items-center">
-                <span class="self-center text-xs font-light lg:text-sm whitespace-nowrap"
-                  >PILIHAN TERBAIK UNTUK
+                <span
+                  class="self-center text-xs lg:text-sm whitespace-nowrap font-brush font-bold text-[#B2004E]"
+                  >MELAYANI DENGAN KASIH
                 </span>
-                <span class="self-center text-xs font-light lg:text-sm whitespace-nowrap"
-                  >IBU DAN ANAK</span
-                >
               </div>
             </div>
           </div>
@@ -37,7 +35,7 @@
         </button>
         <div
           :class="{ hidden: !openToggle }"
-          class="w-full lg:block md:w-full lg:w-auto flex md:justify-center md:items-center"
+          class="w-full lg:block md:w-full lg:w-auto flex md:justify-center md:items-center bg-slate-400 bg-opacity-25 sm:bg-opacity-50 md:bg-opacity-20 lg:bg-transparent"
         >
           <ul
             class="font-medium flex flex-col px-11 mt-4 borderrounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
@@ -79,9 +77,9 @@
             </li>
             <li>
               <a>
-                <RouterLink to="/about" class="btn hover:font-light" aria-current="page">
+                <RouterLink to="/about" class="btn btn-primary bg-pink-600" aria-current="page">
                   <FontAwesomeIcon icon="fa-solid fa-calendar-days" />
-                  <span>Registrasi</span>
+                  <span class="text-black">Registrasi</span>
                 </RouterLink></a
               >
             </li>
@@ -103,3 +101,9 @@ const toggleMenu = () => {
   openToggle.value = !openToggle.value
 }
 </script>
+
+<style scoped>
+.font-brush {
+  font-family: 'Brush Script MT', cursive;
+}
+</style>
