@@ -6,115 +6,115 @@
     <div class="carousel carousel-center w-full p-4 space-x-4 rounded-box" ref="carousel">
       <div class="carousel-item">
         <img
-          src="../../img/Dr/Prof. DR. dr. Starry Rampengan, Sp.JP(K), MARS .png"
+          src="../../img/Dr/Prof._DR._dr._Starry_Rampengan,_Sp.JP(K),_MARS_.png"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="../../img/Dr/dr Andrew Ch. Pangemanan, M.Kes.png"
+          src="../../img/Dr/dr_Andrew Ch._Pangemanan,_M.Kes.png"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="../../img/Dr/dr Eunike Pangemanan.jpg"
+          src="../../img/Dr/dr_Eunike_Pangemanan.jpg"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="../../img/Dr/dr Heriyanis Homenta, M.Biomed.jpg"
+          src="../../img/Dr/dr_Heriyanis_Homenta_M.Biomed.jpg"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="../../img/Dr/dr Jennifer Setiono, SPOG, MARS.jpg"
+          src="../../img/Dr/dr_Jennifer_Setiono,SPOG,MARS.jpg"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="../../img/Dr/dr Joel Osbert, Sp.OG.png"
+          src="../../img/Dr/dr_Joel_Osbert,_Sp.OG.png"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="../../img/Dr/dr Maria Kaunang, Sp.B .png"
+          src="../../img/Dr/dr_Maria_Kaunang,_Sp.B .png"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="../../img/Dr/dr Meiske Runkat, Sp.OG.png"
+          src="../../img/Dr/dr_Meiske_Runkat,Sp.OG.png"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />
       </div>
       <div class="carousel-item">
-        <img src="../../img/Dr/dr Pratama Rawung.jpg" class="w-60 h-60 rounded-2xl" alt="doctor" />
+        <img src="../../img/Dr/dr_Pratama_Rawung.jpg" class="w-60 h-60 rounded-2xl" alt="doctor" />
       </div>
       <div class="carousel-item">
         <img
-          src="../../img/Dr/dr Waldemar Siahaan, Sp.An.png"
-          class="w-60 h-60 rounded-2xl"
-          alt="doctor"
-        />
-      </div>
-      <div class="carousel-item">
-        <img
-          src="../../img/Dr/dr. Arthur H Rampengan, Sp.PD.png"
+          src="../../img/Dr/dr_Waldemar_Siahaan,_Sp.An.png"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="../../img/Dr/dr. Bisuk P. Sedli, Sp.PD-KEMD .png"
+          src="../../img/Dr/dr._Arthur_H_Rampengan,_Sp.PD.png"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="../../img/Dr/Dr. dr. Novie Rampengan, Sp.A(K) .png"
+          src="../../img/Dr/dr._Bisuk_P._Sedli_Sp.PD-KEMD.png"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="../../img/Dr/dr. Irene Maryauw Sp.A.jpg"
+          src="../../img/Dr/Dr._dr._Novie_Rampengan,_Sp.A(K).png"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="../../img/Dr/dr. Jane G. C. Metusala, Sp.A.png"
+          src="../../img/Dr/dr._Irene_Maryauw_Sp.A.jpg"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="../../img/Dr/dr. Novita Tanasal, Sp.PD.png"
+          src="../../img/Dr/dr._Jane G._C._Metusala,_Sp.A.png"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="../../img/Dr/dr. Yuniar Pramulasari, Sp.OG .png"
+          src="../../img/Dr/dr._Novita_Tanasal,_Sp.PD.png"
+          class="w-60 h-60 rounded-2xl"
+          alt="doctor"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="../../img/Dr/dr._Yuniar_Pramulasari,_Sp.OG.png"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />

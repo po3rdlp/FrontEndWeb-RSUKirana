@@ -103,7 +103,7 @@
     <div class="hero h-full bg-base-200 headline">
       <div class="hero-content flex-col lg:flex-row" id="elektrokardiogram">
         <img
-          src="../components/img/Ruangan/EKG (1).jpg"
+          src="../components/img/Ruangan/EKG_(1).jpg"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -141,7 +141,7 @@
     <div class="hero h-full bg-base-200 headline">
       <div class="hero-content flex-col lg:flex-row" id="ekokaridografi">
         <img
-          src="../components/img/Ruangan/EKG (1).jpg"
+          src="../components/img/Ruangan/EKG_(1).jpg"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -160,7 +160,7 @@
     <div class="hero min-h-screen bg-base-200 headline">
       <div class="hero-content flex-col lg:flex-row-reverse" id="holtermonitoring">
         <img
-          src="../components/img/Ruangan/holter monitoring (1).jpg"
+          src="../components/img/Ruangan/holter_monitoring_(1).jpg"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -198,7 +198,7 @@
     <div class="hero min-h-screen bg-base-200 headline">
       <div class="hero-content flex-col lg:flex-row-reverse" id="eecp">
         <img
-          src="../components/img/Ruangan/EECP (1).jpg "
+          src="../components/img/Ruangan/EECP_(1).jpg"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
