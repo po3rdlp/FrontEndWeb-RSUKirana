@@ -32,11 +32,7 @@
       </div>
       <div class="card card-compact max-w-sm max-h-min bg-base-100 shadow-xl">
         <figure>
-          <img
-            src="../components/img/Ruangan/Apotik_Farmasi (1).jpg"
-            alt="Shoes"
-            class="w-96 h-96"
-          />
+          <img src="../components/img/Ruangan/Apotik_Farmasi.jpg" alt="Shoes" class="w-96 h-96" />
         </figure>
         <div class="card-body">
           <h2 class="card-title">APOTEK RSIA KIRANA DIRESMIKAN</h2>
@@ -55,7 +51,7 @@
       </div>
       <div class="card card-compact max-w-sm max-h-min bg-base-100 shadow-xl">
         <figure>
-          <img src="../components/img/Ruangan/VIP Utama.jpg" alt="Shoes" class="w-96 h-96" />
+          <img src="../components/img/Ruangan/VIP_Utama.jpg" alt="Shoes" class="w-96 h-96" />
         </figure>
         <div class="card-body">
           <h2 class="card-title">PERESMIAN RUANGAN VIP RSIA KIRANA MANADO</h2>
