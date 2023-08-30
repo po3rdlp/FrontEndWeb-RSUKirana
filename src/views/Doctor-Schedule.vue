@@ -100,7 +100,7 @@
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
       <div>
         <img
-          src="../components/img/jadwal/Jadwal _r_arthur.png"
+          src="../components/img/jadwal/Jadwal_r_arthur.png"
           alt="Dr"
           class="h-auto max-w-full rounded-lg"
         />
@@ -154,7 +154,7 @@
     <div class="grid grid-cols-2 md:grid-cols-3 lg:3 gap-4">
       <div>
         <img
-          src="../components/img/jadwal/Jadwal prof Starry Rampengan.png"
+          src="../components/img/jadwal/Jadwal_prof_Starry_Rampengan.png"
           alt="Dr"
           class="h-auto max-w-full rounded-lg"
           onclick="modal.showModal()"
