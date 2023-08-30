@@ -1,7 +1,7 @@
 import './assets/style.css'
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './config/router'
+import router from './router'
 
 // Font Awesome Import
 import FontAwesome from './assets/FontAwesome/FontAwesome.js'

@@ -13,7 +13,7 @@
       </div>
       <div class="carousel-item">
         <img
-          src="../../img/Dr/dr_Andrew Ch._Pangemanan,_M.Kes.png"
+          src="../../img/Dr/dr_Andrew_Ch._Pangemanan,_M.Kes.png"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />
@@ -48,7 +48,7 @@
       </div>
       <div class="carousel-item">
         <img
-          src="../../img/Dr/dr_Maria_Kaunang,_Sp.B .png"
+          src="../../img/Dr/dr_Maria_Kaunang,_Sp.B_.png"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />
@@ -100,7 +100,7 @@
       </div>
       <div class="carousel-item">
         <img
-          src="../../img/Dr/dr._Jane G._C._Metusala,_Sp.A.png"
+          src="../../img/Dr/dr._Jane_G._C._Metusala,_Sp.A.png"
           class="w-60 h-60 rounded-2xl"
           alt="doctor"
         />
