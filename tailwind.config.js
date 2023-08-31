@@ -5,7 +5,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // Replace the existing font families with Poppins
         sans: [
           'Poppins',
           'system-ui',

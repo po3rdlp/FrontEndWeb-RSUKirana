@@ -9,7 +9,7 @@ const scrollRevealInstance = () => {
     easing: 'ease-in-out',
     distance: '20px',
     origin: 'bottom',
-    reset: true
+    reset: false
   })
 }
 
