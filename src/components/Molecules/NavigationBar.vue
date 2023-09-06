@@ -38,7 +38,8 @@
       </button>
       <div
         :class="{ hidden: !openToggle }"
-        class="w-full lg:block md:w-full lg:w-auto flex md:justify-center md:items-center bg-slate-400 bg-opacity-25 sm:bg-opacity-50 md:bg-opacity-20 lg:bg-transparent"
+        class="w-full lg:block md:w-full lg:w-auto grid md:justify-center md:items-center from-gray-50 from-5% via-gray-400 via-50% to-gray-50 bg-opacity-25 sm:bg-opacity-50 md:bg-opacity-20 lg:bg-transparent"
+        ref="menuRef"
       >
         <ul
           class="font-medium flex flex-col px-11 mt-4 borderrounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
@@ -57,7 +58,7 @@
                 tabindex="0"
                 class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-fit"
               >
-                <li>
+                <li class="flex justify-center">
                   <a>
                     <RouterLink
                       to="/jadwal-dokter"
@@ -90,11 +91,11 @@
                     </RouterLink></a
                   >
                 </li>
-                <li>
+                <li class="flex justify-center items-center w-full">
                   <a>
                     <RouterLink
                       to="/fasilitas"
-                      class="btn bg-white hover:bg-none"
+                      class="btn flex bg-white hover:bg-none"
                       aria-current="page"
                     >
                       <span class="">FASILITAS</span>
@@ -125,6 +126,17 @@
             >
           </li>
         </ul>
+        <div class="mt-5 space-y-5 block lg:hidden">
+          <p class="flex items-center gap-2 font-bold"><BrandWhatsappIcon /> +000 000 000</p>
+          <p class="flex items-center gap-2 font-bold"><BrandInstagramIcon />RSIA KIRANA</p>
+          <p class="flex items-center gap-2 font-bold"><BrandFacebookIcon />RSIA KIRANA MANADO</p>
+          <p class="flex items-center gap-2 font-bold"><MailCheckIcon />example@gmail.com</p>
+          <div class="flex justify-center items-center">
+            <Button class="btn btn-sm flex bg-purple-300 border-none text-xs"
+              ><AmbulanceIcon /> Emergency Calls : +000 000 000
+            </Button>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -132,15 +144,34 @@
 
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import { onClickOutside } from '@vueuse/core'
 import { RouterLink } from 'vue-router'
-import { ChevronDownIcon } from 'vue-tabler-icons'
+import {
+  ChevronDownIcon,
+  BrandWhatsappIcon,
+  BrandInstagramIcon,
+  BrandFacebookIcon,
+  MailCheckIcon,
+  AmbulanceIcon
+} from 'vue-tabler-icons'
 
 const openToggle = ref(false)
+const menuRef = ref(null)
 
 const toggleMenu = () => {
   openToggle.value = !openToggle.value
 }
+
+const closeMenuOnClickOutside = () => {
+  if (openToggle.value) {
+    openToggle.value = false
+  }
+}
+
+onMounted(() => {
+  onClickOutside(menuRef, closeMenuOnClickOutside)
+})
 </script>
 
 <style scoped>

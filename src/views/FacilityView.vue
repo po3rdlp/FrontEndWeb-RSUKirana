@@ -71,12 +71,10 @@
         <div>
           <h1 class="text-lg md:text-4xl lg:text-5xl font-bold">LABORATORIUM</h1>
           <p class="py-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur non iusto
-            dignissimos repudiandae perferendis, dolores qui veritatis vero consectetur distinctio
-            eveniet perspiciatis dicta nam natus vitae. Animi natus laboriosam velit?Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Iusto nihil, accusamus in earum qui,
-            consectetur ex dolorem illum nobis reprehenderit, quae illo harum reiciendis amet minima
-            delectus voluptatem aspernatur dolorum.
+            Pelayanan penunjang yang bertujuan untuk membantu diagnosa suatu penyakit, menentukan
+            resiko terhadap suatu penyakit dan menentukan prognosis/perjalanan penyakit sehingga
+            dapat digunakan sebagai pemantau perkembangan dan keberhasilan pengobatan suatu
+            penyakit.
           </p>
         </div>
       </div>
@@ -90,12 +88,9 @@
         <div>
           <h1 class="text-lg md:text-4xl lg:text-5xl font-bold">ULTRASONOGRAFI</h1>
           <p class="py-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur non iusto
-            dignissimos repudiandae perferendis, dolores qui veritatis vero consectetur distinctio
-            eveniet perspiciatis dicta nam natus vitae. Animi natus laboriosam velit?Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Iusto nihil, accusamus in earum qui,
-            consectetur ex dolorem illum nobis reprehenderit, quae illo harum reiciendis amet minima
-            delectus voluptatem aspernatur dolorum.
+            Teknik diagnostik pencitraan menggunakan suara ultra yang digunakan untuk mencitrakan
+            organ internal dan otot, ukuran mereka, struktur, dan luka patologi, membuat teknik ini
+            berguna untuk memeriksa organ, termasuk pemeriksaan kandungan pada ibu hamil.
           </p>
         </div>
       </div>
@@ -109,12 +104,8 @@
         <div>
           <h1 class="text-lg md:text-4xl lg:text-5xl font-bold">ELEKTROKARDIOGRAM</h1>
           <p class="py-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur non iusto
-            dignissimos repudiandae perferendis, dolores qui veritatis vero consectetur distinctio
-            eveniet perspiciatis dicta nam natus vitae. Animi natus laboriosam velit?Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Iusto nihil, accusamus in earum qui,
-            consectetur ex dolorem illum nobis reprehenderit, quae illo harum reiciendis amet minima
-            delectus voluptatem aspernatur dolorum.
+            Pemeriksaan untuk mengukur dan merekam aktivitas listrik jantung menggunakan mesin
+            pendeteksi impuls listrik (elektrokardiograf).
           </p>
         </div>
       </div>
@@ -128,12 +119,8 @@
         <div>
           <h1 class="text-lg md:text-4xl lg:text-5xl font-bold">KARDIOTOKOGRAFI</h1>
           <p class="py-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur non iusto
-            dignissimos repudiandae perferendis, dolores qui veritatis vero consectetur distinctio
-            eveniet perspiciatis dicta nam natus vitae. Animi natus laboriosam velit?Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Iusto nihil, accusamus in earum qui,
-            consectetur ex dolorem illum nobis reprehenderit, quae illo harum reiciendis amet minima
-            delectus voluptatem aspernatur dolorum.
+            Kardiotokografi (CTG) adalah Alat yang dipakai untuk mencatat pola denyut jantung janin
+            dalam hubungannya dengan adanya kontraksi ataupun aktivitas janin dalam rahim.
           </p>
         </div>
       </div>
@@ -147,12 +134,10 @@
         <div>
           <h1 class="text-lg md:text-4xl lg:text-5xl font-bold">EKOKARDIOGRAFI</h1>
           <p class="py-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur non iusto
-            dignissimos repudiandae perferendis, dolores qui veritatis vero consectetur distinctio
-            eveniet perspiciatis dicta nam natus vitae. Animi natus laboriosam velit?Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Iusto nihil, accusamus in earum qui,
-            consectetur ex dolorem illum nobis reprehenderit, quae illo harum reiciendis amet minima
-            delectus voluptatem aspernatur dolorum.
+            Ekokardiografi (USG jantung) adalah metode pemeriksaan yang menggunakan gelombang suara
+            berfrekuensi tinggi untuk menangkap gambaran struktur organ jantung. Ekokardiografi
+            biasanya dibantu dengan teknologi Doppler yang dapat mengukur kecepatan dan arah aliran
+            darah.
           </p>
         </div>
       </div>
@@ -166,12 +151,8 @@
         <div>
           <h1 class="text-lg md:text-4xl lg:text-5xl font-bold">HOLTER MONITORING</h1>
           <p class="py-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur non iusto
-            dignissimos repudiandae perferendis, dolores qui veritatis vero consectetur distinctio
-            eveniet perspiciatis dicta nam natus vitae. Animi natus laboriosam velit?Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Iusto nihil, accusamus in earum qui,
-            consectetur ex dolorem illum nobis reprehenderit, quae illo harum reiciendis amet minima
-            delectus voluptatem aspernatur dolorum.
+            Pemeriksaan untuk mengukur dan merekam aktivitas jantung selama 24-48 jam atau lebih
+            menggunakan perangkat portabel.
           </p>
         </div>
       </div>
@@ -185,12 +166,8 @@
         <div>
           <h1 class="text-lg md:text-4xl lg:text-5xl font-bold">TREADMILL</h1>
           <p class="py-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur non iusto
-            dignissimos repudiandae perferendis, dolores qui veritatis vero consectetur distinctio
-            eveniet perspiciatis dicta nam natus vitae. Animi natus laboriosam velit?Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Iusto nihil, accusamus in earum qui,
-            consectetur ex dolorem illum nobis reprehenderit, quae illo harum reiciendis amet minima
-            delectus voluptatem aspernatur dolorum.
+            Pemeriksaan yang dilakukan untuk monitoring kinerja jantung seorang pasien selama
+            melakukan aktivitas fisik.
           </p>
         </div>
       </div>
@@ -204,12 +181,9 @@
         <div>
           <h1 class="text-lg md:text-4xl lg:text-5xl font-bold">EECP</h1>
           <p class="py-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur non iusto
-            dignissimos repudiandae perferendis, dolores qui veritatis vero consectetur distinctio
-            eveniet perspiciatis dicta nam natus vitae. Animi natus laboriosam velit?Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Iusto nihil, accusamus in earum qui,
-            consectetur ex dolorem illum nobis reprehenderit, quae illo harum reiciendis amet minima
-            delectus voluptatem aspernatur dolorum.
+            prosedur non-invasif yang bertujuan menumbuhkan pembuluh kolateral baru secara alami.
+            Tindakan ini baik untuk penderita jantung koroner, gagal jantung, penderita stroke,
+            disfungsi ereksi.
           </p>
         </div>
       </div>
@@ -223,12 +197,8 @@
         <div>
           <h1 class="text-lg md:text-4xl lg:text-5xl font-bold">ABPM</h1>
           <p class="py-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur non iusto
-            dignissimos repudiandae perferendis, dolores qui veritatis vero consectetur distinctio
-            eveniet perspiciatis dicta nam natus vitae. Animi natus laboriosam velit?Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Iusto nihil, accusamus in earum qui,
-            consectetur ex dolorem illum nobis reprehenderit, quae illo harum reiciendis amet minima
-            delectus voluptatem aspernatur dolorum.
+            Tindakan medis yang dilakukan untuk memantau tekanan darah pasien selama 24 jam.
+            Tindakan medis ini biasanya diterapkan untuk menangani pasien penyakit hipertensi.
           </p>
         </div>
       </div>

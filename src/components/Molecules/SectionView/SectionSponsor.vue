@@ -41,9 +41,6 @@
           <img src="../../img/sponsor/JKN.jpg" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../../img/sponsor/KEMENKES.jpg" alt="logo" />
-        </a>
-        <a class="flex items-center lg:justify-center" target="_blank">
           <img src="../../img/sponsor/LIPPO.jpg" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">

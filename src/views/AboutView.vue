@@ -10,7 +10,7 @@
   </div>
 
   <div class="w-full h-full p-5">
-    <div class="grid sm:flex justify-around items-center headline">
+    <div class="grid sm:flex justify-center items-center headline">
       <div class="max-w-sm lg:max-w-3xl">
         <p class="text-2xl font-extrabold">
           SELAMAT DATANG DI WEBSITE <span class="text-pink-500">RSIA KIRANA MANADO</span>
@@ -38,13 +38,22 @@
     </div>
 
     <div class="grid sm:flex justify-around items-center headline">
-      <div class="max-w-sm lg:max-w-3xl p-10">
-        <p class="text-2xl font-extrabold text-pink-500">VISI</p>
-        <span class="text-xs tracking-widest font-bold"
-          >"Terwujudnya Rumah Sakit Ibu dan Anak Kirana Yang Unggul dan Menjadi Pilihan
-          Masyarakat."</span
-        >
-
+      <div class="max-w-sm lg:max-w-6xl p-3">
+        <div class="grid md:flex lg:flex">
+          <div>
+            <p class="text-2xl font-extrabold text-pink-500">VISI</p>
+            <span class="text-xs tracking-widest font-bold"
+              >"Terwujudnya Rumah Sakit Ibu dan Anak Kirana Yang Unggul dan Menjadi Pilihan
+              Masyarakat."</span
+            >
+          </div>
+          <div class="max-w-sm lg:max-w-3xl">
+            <p class="text-2xl font-extrabold text-pink-500">MOTO</p>
+            <span class="text-xs tracking-widest font-bold"
+              >KIRANA (Komunikatif, Informatif, Responsif, Akuntabel, Nyaman, Aman)</span
+            >
+          </div>
+        </div>
         <p class="text-2xl font-extrabold mt-3">MISI</p>
         <ol class="list-decimal ml-4">
           <li>
@@ -73,46 +82,6 @@
             <span class="text-xs tracking-widest text-gray-500 font-extralight"
               >Menjadi rumah sakit ibu dan anak yang mampu mewujudkan fungsinya sebagai pelayanan
               kesehatan ibu dan anak</span
-            >
-          </li>
-        </ol>
-      </div>
-
-      <div class="max-w-sm lg:max-w-3xl p-10 headline">
-        <p class="text-2xl font-extrabold text-pink-500">MOTO</p>
-        <span class="text-xs tracking-widest font-bold"
-          >KIRANA (Komunikatif, Informatif, Responsif, Akuntabel, Nyaman, Aman)</span
-        >
-
-        <p class="text-2xl font-extrabold mt-3">TUJUAN</p>
-        <ol class="list-decimal ml-4">
-          <li>
-            <span class="text-xs tracking-widest text-gray-500 font-extralight">
-              Menyelenggarakan pelayanan kesehatan yang unggul dan terjangkau oleh masyarakat
-              berdasarkan kasih</span
-            >
-          </li>
-          <li>
-            <span class="text-xs tracking-widest text-gray-500 font-extralight"
-              >Menyelenggarakan pelayanan kesehatan secara maksimal, menyeluruh dan profesional
-            </span>
-          </li>
-          <li>
-            <span class="text-xs tracking-widest text-gray-500 font-extralight"
-              >Meningkatkan kualitas pelayanan kesehatan melalui peningkatkan kompetensi dan
-              profesionalisme sumber daya manusia
-            </span>
-          </li>
-          <li>
-            <span class="text-xs tracking-widest text-gray-500 font-extralight"
-              >Meningkatkan sarana dan prasarana untuk menunjang pelayanan profesional
-              kesehatan.</span
-            >
-          </li>
-          <li>
-            <span class="text-xs tracking-widest text-gray-500 font-extralight">
-              Meningkatkan pelayanan kepada masyarakat umum dengan memberi pemahaman kesehatan
-              khususnya kesehatan ibu dan anak</span
             >
           </li>
         </ol>
@@ -160,9 +129,6 @@
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
           <img src="../components/img/sponsor/JKN.jpg" alt="logo" />
-        </a>
-        <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/KEMENKES.jpg" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
           <img src="../components/img/sponsor/LIPPO.jpg" alt="logo" />

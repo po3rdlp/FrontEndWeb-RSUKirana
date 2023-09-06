@@ -1,13 +1,13 @@
 <template>
   <section class="shadow-sm">
-    <div class="flex w-full h-full md:h-screen lg:h-screen relative">
+    <!-- <div class="flex w-full h-full md:h-full lg:h-screen relative">
       <img
         src="../../img/Gedung/RSIAKIRANA2.jpeg"
         class="w-full h-full top-0 absolute -z-10 opacity-60"
       />
       <img
         src="../../img/Dr/Prof._DR._dr._Starry_Rampengan__Sp.JP_K___MARS_-removebg-preview.png"
-        class="hidden sm:block absolute bottom-0 right-0 lg:-right-32 h-[26em] md:h-[35em] lg:h-full"
+        class="hidden sm:block absolute bottom-0 right-0 lg:right-0 h-[26em] md:h-[25em] lg:h-[30em]"
       />
       <div class="grid md:grid md:items-end lg:items-center px-0 lg:px-5 py-10 ml-0">
         <div class="">
@@ -32,8 +32,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- <div class="carousel snap-center w-full h-full bg-white" id="carousel">
+    </div> -->
+    <div class="carousel snap-center w-full h-full bg-white" id="carousel">
       <div class="carousel-item w-full" ref="carousel1">
         <div class="hero min-h-screen bg-right-top bg-fixed section1">
           <div class="hero-overlay bg-opacity-30"></div>
@@ -45,7 +45,7 @@
                 RSIA KIRANA MANADO
               </h1>
               <p class="mb-5 text-[12px] md:text-sm lg:text-2xl font-bold text-center">
-                Menjadikan Setiap Momongan dan Ibu Sehat sebagai Prioritas Kami
+                ❝Menjadikan Setiap Momongan dan Ibu Sehat sebagai Prioritas Kami❞
               </p>
               <RouterLink to="/registration" class="btn btn-primary">REGISTRASI</RouterLink>
             </div>
@@ -78,7 +78,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
   </section>
 </template>
 

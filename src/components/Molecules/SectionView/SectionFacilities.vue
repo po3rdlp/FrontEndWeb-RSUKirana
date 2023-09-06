@@ -30,7 +30,7 @@
             <div
               class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
             >
-              <EarIcon />
+              <EyeTableIcon />
             </div>
             <h3 class="mb-2 text-xl font-bold">ULTRASONOGRAFI</h3>
             <p class="text-gray-500 dark:text-gray-400">
@@ -166,7 +166,7 @@ import {
   MicroscopeIcon,
   RunIcon,
   ListDetailsIcon,
-  EarIcon,
+  EyeTableIcon,
   ActivityHeartbeatIcon,
   HeartbeatIcon,
   HeartRateMonitorIcon,
@@ -179,7 +179,7 @@ export default {
     MicroscopeIcon,
     RunIcon,
     ListDetailsIcon,
-    EarIcon,
+    EyeTableIcon,
     ActivityHeartbeatIcon,
     HeartbeatIcon,
     HeartRateMonitorIcon,
