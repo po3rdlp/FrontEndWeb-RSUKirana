@@ -10,9 +10,10 @@
         ><a class="link link-hover">PENGUMUMAN DAN BERITA</a></RouterLink
       >
       <RouterLink to="/fasilitas"><a class="link link-hover">FASILITAS</a></RouterLink>
+      <RouterLink to="/tambah-berita"><a class="link link-hover">Tambah Berita</a></RouterLink>
     </div>
     <div>
-      <span class="footer-title">Company</span>
+      <span class="footer-title">About</span>
       <a class="link link-hover">TENTANG KAMI</a>
     </div>
     <div>
