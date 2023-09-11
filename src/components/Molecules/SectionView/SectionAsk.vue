@@ -11,7 +11,9 @@
           Pertanyaan yang anda kirim akan kami terima melalui Google Form
         </p>
       </div>
-      <div class="w-auto flex-shrink-0 rounded-lg lg:mt-0 lg:col-span-5 lg:flex">
+      <div
+        class="min-w-0 md:min-w-full lg:min-w-full flex-shrink-0 rounded-lg lg:mt-0 lg:col-span-5 lg:flex"
+      >
         <div class="card-body">
           <div class="form-control">
             <label class="label">

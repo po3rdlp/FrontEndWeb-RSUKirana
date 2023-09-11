@@ -45,7 +45,7 @@
           class="font-medium flex flex-col px-11 mt-4 borderrounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
         >
           <li>
-            <a>
+            <a @click="closeToggle">
               <RouterLink to="/" class="btn btn-ghost md:bg-transparent" aria-current="page">
                 BERANDA
               </RouterLink>
@@ -59,7 +59,7 @@
                 class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-fit"
               >
                 <li class="flex justify-center">
-                  <a>
+                  <a @click="closeToggle">
                     <RouterLink
                       to="/jadwal-dokter"
                       class="btn bg-white hover:bg-none"
@@ -75,6 +75,7 @@
                       to="/jumlah-tempat-tidur"
                       class="btn bg-white hover:bg-none"
                       aria-current="page"
+                      @click="closeToggle"
                     >
                       <span class="">JUMLAH TEMPAT TIDUR</span>
                     </RouterLink></a
@@ -86,6 +87,7 @@
                       to="/berita-informasi"
                       class="btn bg-white hover:bg-none"
                       aria-current="page"
+                      @click="closeToggle"
                     >
                       <span class="">PENGUMUMAN DAN BERITA</span>
                     </RouterLink></a
@@ -97,6 +99,7 @@
                       to="/fasilitas"
                       class="btn flex bg-white hover:bg-none"
                       aria-current="page"
+                      @click="closeToggle"
                     >
                       <span class="">FASILITAS</span>
                     </RouterLink></a
@@ -107,14 +110,14 @@
           </li>
 
           <li>
-            <a>
+            <a @click="closeToggle">
               <RouterLink to="/about" class="btn btn-ghost" aria-current="page">
                 <span class="">Tentang Kami</span>
               </RouterLink></a
             >
           </li>
           <li>
-            <a>
+            <a @click="closeToggle">
               <RouterLink
                 to="/registration"
                 class="btn btn-primary hover:bg-gray-300 bg-pink-400 border-none"
@@ -127,15 +130,21 @@
           </li>
         </ul>
         <div class="mt-5 space-y-5 block lg:hidden">
-          <p class="flex items-center gap-2 font-bold"><BrandWhatsappIcon /> +000 000 000</p>
-          <p class="flex items-center gap-2 font-bold"><BrandInstagramIcon />RSIA KIRANA</p>
-          <p class="flex items-center gap-2 font-bold"><BrandFacebookIcon />RSIA KIRANA MANADO</p>
-          <p class="flex items-center gap-2 font-bold"><MailCheckIcon />example@gmail.com</p>
-          <div class="flex justify-center items-center">
-            <Button class="btn btn-sm flex bg-purple-300 border-none text-xs"
-              ><AmbulanceIcon /> Emergency Calls : +000 000 000
-            </Button>
-          </div>
+          <button class="flex items-center gap-2 font-light btn btn-ghost" @click="closeToggle">
+            <BrandWhatsappIcon /> 081388888898
+          </button>
+          <button class="flex items-center gap- font-light btn btn-ghost" @click="closeToggle">
+            <BrandInstagramIcon />RSIA KIRANA
+          </button>
+          <button class="flex items-center gap-2 font-light btn btn-ghost" @click="closeToggle">
+            <BrandFacebookIcon />Rumah Sakit Kirana
+          </button>
+          <button class="flex items-center gap- font-light btn btn-ghost" @click="closeToggle">
+            <MailCheckIcon />rskirana94@gmail.com
+          </button>
+          <button class="flex items-center gap- font-light btn btn-ghost" @click="closeToggle">
+            <AmbulanceIcon />EMERGENCY CALL: 082234567899
+          </button>
         </div>
       </div>
     </div>
@@ -161,6 +170,10 @@ const menuRef = ref(null)
 
 const toggleMenu = () => {
   openToggle.value = !openToggle.value
+}
+
+const closeToggle = () => {
+  openToggle.value = false
 }
 
 const closeMenuOnClickOutside = () => {

@@ -31,20 +31,18 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <RouterLink to="/about" class="btn btn-primary" @click="scrollToTop"
-          >SELENGKAPNYA</RouterLink
-        >
+        <RouterLink to="/about" class="btn btn-primary">SELENGKAPNYA</RouterLink>
       </div>
     </div>
   </div>
 </template>
 
-<script>
+<script setup>
+import { onMounted } from 'vue'
+import { InfoCircleIcon } from 'vue-tabler-icons'
 import scrollRevealInstance from '../../../assets/ScrollReveal/ScrollReveal'
 
-export default {
-  mounted() {
-    scrollRevealInstance()
-  }
-}
+onMounted(() => {
+  scrollRevealInstance()
+})
 </script>

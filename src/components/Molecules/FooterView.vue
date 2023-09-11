@@ -2,10 +2,14 @@
   <footer class="footer p-10 bg-slate-900 text-gray-50">
     <div>
       <span class="footer-title">INFORMASI</span>
-      <a class="link link-hover">JADWAL DOKTER</a>
-      <a class="link link-hover">JUMLAH TEMPAT TIDUR</a>
-      <a class="link link-hover">PENGUMUMAN DAN BERITA</a>
-      <a class="link link-hover">FASILITAS</a>
+      <RouterLink to="/jadwal-dokter"><a class="link link-hover">JADWAL DOKTER</a></RouterLink>
+      <RouterLink to="/jumlah-tempat-tidur"
+        ><a class="link link-hover">JUMLAH TEMPAT TIDUR</a></RouterLink
+      >
+      <RouterLink to="/berita-informasi"
+        ><a class="link link-hover">PENGUMUMAN DAN BERITA</a></RouterLink
+      >
+      <RouterLink to="/fasilitas"><a class="link link-hover">FASILITAS</a></RouterLink>
     </div>
     <div>
       <span class="footer-title">Company</span>

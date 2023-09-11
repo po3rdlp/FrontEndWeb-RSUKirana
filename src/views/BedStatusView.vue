@@ -3,14 +3,16 @@
     <div class="hero-overlay bg-opacity-60"></div>
     <div class="hero-content text-center text-neutral-content">
       <div class="max-w-md">
-        <h1 class="mb-5 text-5xl font-bold text-gray-200">KETERSEDIAAN TEMPAT TIDUR</h1>
+        <h1 class="mb-5 text-2xl md:text-3xl lg:text-5xl font-bold text-gray-200">
+          KETERSEDIAAN TEMPAT TIDUR
+        </h1>
         <p class="mb-5">
           Anda dapat melihat Jadwal Dokter di bawah. Jadwal Dokter Terkini dan Terupdate.
         </p>
       </div>
     </div>
   </div>
-  <div class="w-full h-screen p-5">
+  <div class="w-full h-full p-5">
     <p class="text-center text-2xl text-gray-600 font-bold mb-5">KETERSEDIAAN TEMPAT TIDUR</p>
     <div class="overflow-x-auto">
       <table class="table table-zebra w-full text-sm text-left text-gray-500 dark:text-gray-400">

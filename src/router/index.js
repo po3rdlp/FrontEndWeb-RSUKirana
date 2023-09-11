@@ -6,6 +6,7 @@ import RegistrasiView from '../views/RegistrasiView.vue'
 import BedStatusView from '../views/BedStatusView.vue'
 import NewsView from '../views/NewsView.vue'
 import AddNews from '../views/AddNews.vue'
+import NotFound from '../views/NotFound.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -57,6 +58,10 @@ const router = createRouter({
     {
       path: '/tambah-berita',
       component: AddNews
+    },
+    {
+      path: '/:catchAll(.*)',
+      component: NotFound
     }
   ]
 })
