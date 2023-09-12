@@ -5,7 +5,7 @@ const scrollRevealInstance = () => {
 
   sr.reveal('.headline', {
     delay: 200,
-    duration: 1000,
+    duration: 500,
     easing: 'ease-in-out',
     distance: '20px',
     origin: 'bottom',

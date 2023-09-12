@@ -1,6 +1,8 @@
 <template>
   <nav class="bg-gradient-to-r from-gray-50 from-5% via-gray-400 via-50% to-gray-50">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1">
+    <div
+      class="max-w-screen-md md:max-w-screen-md lg:max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1"
+    >
       <a class="flex items-center">
         <img
           src="../img/Logo.png"
@@ -38,13 +40,13 @@
       </button>
       <div
         :class="{ hidden: !openToggle }"
-        class="w-full lg:block md:w-full lg:w-auto grid md:justify-center md:items-center from-gray-50 from-5% via-gray-400 via-50% to-gray-50 bg-opacity-25 sm:bg-opacity-50 md:bg-opacity-20 lg:bg-transparent"
+        class="w-full lg:block md:w-full lg:w-auto grid md:justify-center md:items-end from-gray-50 from-5% via-gray-400 via-50% to-gray-50 bg-opacity-25 sm:bg-opacity-50 md:bg-opacity-20 lg:bg-transparent"
         ref="menuRef"
       >
         <ul
-          class="font-medium flex flex-col px-11 mt-4 borderrounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
+          class="font-medium flex flex-col justify-center px-11 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
         >
-          <li>
+          <li class="group relative">
             <a @click="closeToggle">
               <RouterLink to="/" class="btn btn-ghost md:bg-transparent" aria-current="page">
                 BERANDA
@@ -52,55 +54,36 @@
             </a>
           </li>
           <li>
-            <div class="dropdown">
+            <div class="dropdown dropdown-hover">
               <label tabindex="0" class="btn btn-ghost">INFORMASI <ChevronDownIcon /> </label>
               <ul
                 tabindex="0"
-                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-fit"
+                class="dropdown-content menu p-3 gap-3 shadow bg-base-100 w-56 rounded-lg"
               >
                 <li class="flex justify-center">
                   <a @click="closeToggle">
-                    <RouterLink
-                      to="/jadwal-dokter"
-                      class="btn bg-white hover:bg-none"
-                      aria-current="page"
-                    >
+                    <RouterLink to="/jadwal-dokter" aria-current="page">
                       <span class="">Jadwal Dokter</span>
                     </RouterLink></a
                   >
                 </li>
                 <li>
                   <a>
-                    <RouterLink
-                      to="/jumlah-tempat-tidur"
-                      class="btn bg-white hover:bg-none"
-                      aria-current="page"
-                      @click="closeToggle"
-                    >
+                    <RouterLink to="/jumlah-tempat-tidur" aria-current="page" @click="closeToggle">
                       <span class="">JUMLAH TEMPAT TIDUR</span>
                     </RouterLink></a
                   >
                 </li>
                 <li>
                   <a>
-                    <RouterLink
-                      to="/berita-informasi"
-                      class="btn bg-white hover:bg-none"
-                      aria-current="page"
-                      @click="closeToggle"
-                    >
+                    <RouterLink to="/berita-informasi" aria-current="page" @click="closeToggle">
                       <span class="">PENGUMUMAN DAN BERITA</span>
                     </RouterLink></a
                   >
                 </li>
-                <li class="flex justify-center items-center w-full">
+                <li>
                   <a>
-                    <RouterLink
-                      to="/fasilitas"
-                      class="btn flex bg-white hover:bg-none"
-                      aria-current="page"
-                      @click="closeToggle"
-                    >
+                    <RouterLink to="/fasilitas" aria-current="page" @click="closeToggle">
                       <span class="">FASILITAS</span>
                     </RouterLink></a
                   >
@@ -116,7 +99,7 @@
               </RouterLink></a
             >
           </li>
-          <li>
+          <!-- <li>
             <a @click="closeToggle">
               <RouterLink
                 to="/registration"
@@ -127,22 +110,38 @@
                 <span class="text-black">Registrasi</span>
               </RouterLink></a
             >
-          </li>
+          </li> -->
         </ul>
-        <div class="mt-5 space-y-5 block lg:hidden">
-          <button class="flex items-center gap-2 font-light btn btn-ghost" @click="closeToggle">
+        <div class="mt-5 flex overflow-x-auto lg:hidden border-t border-black">
+          <button
+            class="flex items-center gap-2 font-light btn btn-ghost"
+            @click="closeToggle"
+            v-on:click="whatsappClick"
+          >
             <BrandWhatsappIcon /> 081388888898
           </button>
-          <button class="flex items-center gap- font-light btn btn-ghost" @click="closeToggle">
+          <button
+            class="flex items-center gap- font-light btn btn-ghost"
+            @click="closeToggle"
+            v-on:click="instagramClick"
+          >
             <BrandInstagramIcon />RSIA KIRANA
           </button>
-          <button class="flex items-center gap-2 font-light btn btn-ghost" @click="closeToggle">
+          <button
+            class="flex items-center gap-2 font-light btn btn-ghost"
+            @click="closeToggle"
+            v-on:click="facebookClick"
+          >
             <BrandFacebookIcon />Rumah Sakit Kirana
           </button>
           <button class="flex items-center gap- font-light btn btn-ghost" @click="closeToggle">
             <MailCheckIcon />rskirana94@gmail.com
           </button>
-          <button class="flex items-center gap- font-light btn btn-ghost" @click="closeToggle">
+          <button
+            class="flex items-center gap- font-light btn btn-ghost"
+            @click="closeToggle"
+            v-on:click="whatsappEmergencyClick"
+          >
             <AmbulanceIcon />EMERGENCY CALL: 082234567899
           </button>
         </div>
@@ -180,6 +179,22 @@ const closeMenuOnClickOutside = () => {
   if (openToggle.value) {
     openToggle.value = false
   }
+}
+
+const whatsappClick = () => {
+  window.open('https://wa.me/6281388888898', '_blank')
+}
+
+const whatsappEmergencyClick = () => {
+  window.open('https://wa.me/6282234567899', '_blank')
+}
+
+const instagramClick = () => {
+  window.open('https://www.instagram.com/rsiakirana_manado/', '_blank')
+}
+
+const facebookClick = () => {
+  window.open('https://m.facebook.com/profile.php?id=141344839259693', '_blank')
 }
 
 onMounted(() => {
