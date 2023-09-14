@@ -25,9 +25,7 @@
       </div>
       <span class="sr-only">Loading...</span>
     </article>
-    <article
-      class="flex max-w-xl flex-col items-start justify-between transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 animate-pulse"
-    >
+    <article class="flex max-w-xl flex-col items-start justify-between animate-pulse">
       <div>
         <svg
           class="w-56 h-56 rounded-lg"
@@ -50,9 +48,7 @@
       </div>
       <span class="sr-only">Loading...</span>
     </article>
-    <article
-      class="flex max-w-xl flex-col items-start justify-between transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 animate-pulse"
-    >
+    <article class="flex max-w-xl flex-col items-start justify-between animate-pulse">
       <div>
         <svg
           class="w-56 h-56 rounded-lg"
@@ -75,9 +71,7 @@
       </div>
       <span class="sr-only">Loading...</span>
     </article>
-    <article
-      class="flex max-w-xl flex-col items-start justify-between transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 animate-pulse"
-    >
+    <article class="flex max-w-xl flex-col items-start justify-between animate-pulse">
       <div>
         <svg
           class="w-56 h-56 rounded-lg"
@@ -98,39 +92,9 @@
         <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 w-56 mb-2.5"></div>
         <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 w-56 mb-2.5"></div>
       </div>
-      <span class="sr-only">Loading...</span>
     </article>
-    <!-- <article
-          class="flex max-w-xl flex-col items-start justify-between transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 headline"
-        >
-          <div class="flex items-center gap-x-4 text-xs">
-            <time datetime="2020-03-16" class="text-black">Mar 16, 2020</time>
-          </div>
-          <div>
-            <img
-              src="../../img/Ruangan/Apotik_Farmasi.jpg"
-              alt="logo"
-              class="w-56 h-56 rounded-lg"
-            />
-          </div>
-          <div class="group relative">
-            <h3
-              class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
-            >
-              <a href="#">
-                <span class="absolute inset-0"></span>
-                PERESMIAN RUANGAN APOTEK RSIA KIRANA MANADO
-              </a>
-            </h3>
-            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-              Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non
-              aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla
-              deserunt vel. Iusto corrupti dicta.
-            </p>
-          </div>
-          <div class="relative mt-8 flex items-center gap-x-4">
-            <img src="../../img/Logo.png" alt="" class="h-10 w-10 rounded-lg bg-gray-50" />
-          </div>
-        </article> -->
+    <div class="flex justify-center">
+      <h5 class="text text-center text-3xl font-bold">Memuat....</h5>
+    </div>
   </div>
 </template>

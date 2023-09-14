@@ -7,6 +7,7 @@ import BedStatusView from '../views/BedStatusView.vue'
 import NewsView from '../views/NewsView.vue'
 import AddNews from '../views/AddNews.vue'
 import NotFound from '../views/NotFound.vue'
+import NewsFullView from '../views/NewsFullView.vue'
 import { useAuthStore } from '../assets/store/State'
 
 const router = createRouter({
@@ -54,6 +55,11 @@ const router = createRouter({
     {
       path: '/fasilitas',
       component: FacilityView
+    },
+    {
+      path: '/berita-informasi/:id',
+      component: NewsFullView,
+      props: true
     },
     {
       path: '/tambah-berita',

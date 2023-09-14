@@ -44,7 +44,7 @@
         ref="menuRef"
       >
         <ul
-          class="font-medium flex flex-col justify-center px-11 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
+          class="font-medium flex flex-col justify-center px-11 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
         >
           <li class="group relative">
             <a @click="closeToggle">

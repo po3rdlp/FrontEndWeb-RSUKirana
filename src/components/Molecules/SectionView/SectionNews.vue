@@ -49,10 +49,10 @@
           </article>
         </div>
       </div>
-      <div v-else>
-        <p>No Data</p>
+      <div v-else class="flex justify-center h-56 items-center">
+        <p class="text text-3xl text-center">No Data</p>
       </div>
-      <div v-if="!isLoading" class="flex justify-between pt-10">
+      <div v-if="!isLoading && data" class="flex justify-between pt-10">
         <div>
           <button
             class="btn bg-gray-200 hover:bg-gray-400"
@@ -69,7 +69,9 @@
             <ChevronRightIcon />
           </button>
         </div>
-        <button class="btn btn-ghost text-lg font-extrabold">Selengkapnya..</button>
+        <RouterLink to="/berita-informasi" class="btn btn-ghost text-lg font-extrabold"
+          >Selengkapnya..</RouterLink
+        >
       </div>
     </div>
     <div class="divider"></div>
