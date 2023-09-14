@@ -17,6 +17,8 @@
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "@vueuse/core": "^10.4.1",
     "axios": "^1.5.0",
+    "compressorjs": "^1.2.1",
+    "pinia": "^2.1.6",
     "scrollreveal": "^4.0.9",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2",

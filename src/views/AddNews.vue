@@ -18,30 +18,34 @@
           placeholder="Deskripsi Berita"
         />
         <label for="gambar" class="label">Gambar</label>
-        <input @change="handleFileChange" type="file" class="input file-input" />
+        <input @change="handleFileChange" type="file" class="input file-input" accept="image/*" />
 
         <button class="btn btn-primary mt-5" type="submit">Submit</button>
       </form>
+    </div>
+    <div class="flex justify-center items-center">
+      <table></table>
     </div>
   </div>
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
-import axios from 'axios'
+import { onMounted, ref } from 'vue'
+import Compressor from 'compressorjs'
+import api from '../assets/config/api.config'
 
 let title = ''
 let desc = ''
 // eslint-disable-next-line no-unused-vars
 let gambar = null
 // eslint-disable-next-line no-unused-vars
-let data = null
+let data = ref(null)
 
 const newsData = () => {
-  axios
-    .get('http://localhost:5000/dev/v1/news')
+  api
+    .get('/dev/v1/news')
     .then((res) => {
-      data = res.data
+      data.value = res.data
       console.log(res.data)
     })
     .catch((err) => console.log(err))
@@ -51,26 +55,55 @@ onMounted(() => {
   newsData()
 })
 
-const submitForm = () => {
+const submitForm = async () => {
   console.log(`Judul: ${title}, deskripsi: ${desc}`)
-  const formData = new FormData() // Create a FormData object
+  const formData = new FormData()
 
-  // Append the form fields and file to FormData
   formData.append('title', title)
   formData.append('desc', desc)
-  formData.append('image', gambar)
 
-  axios
-    .post('http://localhost:5000/dev/v1/addNews', formData, {
+  if (gambar) {
+    try {
+      // Check the size of the image
+      if (gambar.size > 800 * 1024) {
+        // 800 KB in bytes
+        const compressedImage = await new Promise((resolve, reject) => {
+          new Compressor(gambar, {
+            quality: 0.5,
+            success(result) {
+              resolve(result)
+            },
+            error(err) {
+              reject(err)
+            }
+          })
+        })
+        if (compressedImage.size > 700 * 1024) {
+          console.log('Ok')
+        } else {
+          formData.append('image', compressedImage)
+        }
+      } else {
+        formData.append('image', gambar)
+      }
+    } catch (error) {
+      console.error('Image compression error:', error.message)
+      return
+    }
+  }
+
+  try {
+    const response = await api.post('/dev/v1/addNews', formData, {
       headers: {
-        'Content-Type': 'multipart/form-data' // Set the content type to multipart/form-data
+        'Content-Type': 'multipart/form-data'
       }
     })
-    .then((res) => {
-      console.log(res.data.message)
-      window.location.reload()
-    })
-    .catch((err) => console.log(err))
+
+    console.log(response.data.message)
+    window.location.reload()
+  } catch (error) {
+    console.error('Error posting data:', error)
+  }
 }
 
 const handleFileChange = (event) => {

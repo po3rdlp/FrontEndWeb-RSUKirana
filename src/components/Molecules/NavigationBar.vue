@@ -1,7 +1,7 @@
 <template>
   <nav class="bg-gradient-to-r from-gray-50 from-5% via-gray-400 via-50% to-gray-50">
     <div
-      class="max-w-screen-md md:max-w-screen-md lg:max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1"
+      class="max-w-screen-md md:max-w-screen-md lg:max-w-screen-xl flex flex-wrap items-center mx-auto justify-between p-3"
     >
       <a class="flex items-center">
         <img
@@ -48,42 +48,55 @@
         >
           <li class="group relative">
             <a @click="closeToggle">
-              <RouterLink to="/" class="btn btn-ghost md:bg-transparent" aria-current="page">
-                BERANDA
-              </RouterLink>
+              <RouterLink to="/" class="btn btn-ghost md:bg-transparent"> BERANDA </RouterLink>
             </a>
           </li>
           <li>
-            <div class="dropdown dropdown-hover">
-              <label tabindex="0" class="btn btn-ghost">INFORMASI <ChevronDownIcon /> </label>
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost" @click="informationToggle"
+                >INFORMASI <ChevronDownIcon />
+              </label>
               <ul
                 tabindex="0"
                 class="dropdown-content menu p-3 gap-3 shadow bg-base-100 w-56 rounded-lg"
+                v-if="toggleDropdown"
               >
                 <li class="flex justify-center">
-                  <a @click="closeToggle">
-                    <RouterLink to="/jadwal-dokter" aria-current="page">
+                  <a @click="closeToggle" v-on:click="closeInformationToggle">
+                    <RouterLink to="/jadwal-dokter">
                       <span class="">Jadwal Dokter</span>
                     </RouterLink></a
                   >
                 </li>
                 <li>
                   <a>
-                    <RouterLink to="/jumlah-tempat-tidur" aria-current="page" @click="closeToggle">
+                    <RouterLink
+                      to="/jumlah-tempat-tidur"
+                      @click="closeToggle"
+                      v-on:click="closeInformationToggle"
+                    >
                       <span class="">JUMLAH TEMPAT TIDUR</span>
                     </RouterLink></a
                   >
                 </li>
                 <li>
                   <a>
-                    <RouterLink to="/berita-informasi" aria-current="page" @click="closeToggle">
+                    <RouterLink
+                      to="/berita-informasi"
+                      @click="closeToggle"
+                      v-on:click="closeInformationToggle"
+                    >
                       <span class="">PENGUMUMAN DAN BERITA</span>
                     </RouterLink></a
                   >
                 </li>
                 <li>
                   <a>
-                    <RouterLink to="/fasilitas" aria-current="page" @click="closeToggle">
+                    <RouterLink
+                      to="/fasilitas"
+                      @click="closeToggle"
+                      v-on:click="closeInformationToggle"
+                    >
                       <span class="">FASILITAS</span>
                     </RouterLink></a
                   >
@@ -91,13 +104,17 @@
               </ul>
             </div>
           </li>
-
           <li>
             <a @click="closeToggle">
               <RouterLink to="/about" class="btn btn-ghost" aria-current="page">
                 <span class="">Tentang Kami</span>
               </RouterLink></a
             >
+          </li>
+          <li v-if="authStore.isUserLoggedIn">
+            <a @click="closeToggle" v-on:click="logOut">
+              <button class="btn bg-pink-500"><LogoutIcon /></button>
+            </a>
           </li>
           <!-- <li>
             <a @click="closeToggle">
@@ -151,6 +168,7 @@
 </template>
 
 <script setup>
+import { useAuthStore } from '../../assets/store/State'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { ref, onMounted } from 'vue'
 import { onClickOutside } from '@vueuse/core'
@@ -161,11 +179,22 @@ import {
   BrandInstagramIcon,
   BrandFacebookIcon,
   MailCheckIcon,
-  AmbulanceIcon
+  AmbulanceIcon,
+  LogoutIcon
 } from 'vue-tabler-icons'
 
 const openToggle = ref(false)
+const authStore = useAuthStore()
 const menuRef = ref(null)
+let toggleDropdown = ref(false)
+
+const informationToggle = () => {
+  toggleDropdown.value = !toggleDropdown.value
+}
+
+const closeInformationToggle = () => {
+  toggleDropdown.value = false
+}
 
 const toggleMenu = () => {
   openToggle.value = !openToggle.value
@@ -179,6 +208,10 @@ const closeMenuOnClickOutside = () => {
   if (openToggle.value) {
     openToggle.value = false
   }
+}
+
+const logOut = () => {
+  authStore.logout()
 }
 
 const whatsappClick = () => {

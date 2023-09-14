@@ -7,10 +7,11 @@ import BedStatusView from '../views/BedStatusView.vue'
 import NewsView from '../views/NewsView.vue'
 import AddNews from '../views/AddNews.vue'
 import NotFound from '../views/NotFound.vue'
+import { useAuthStore } from '../assets/store/State'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  scrollBehavior(to, savedPosition) {
+  scrollBehavior(to) {
     document.getElementById('app').scrollIntoView({ behavior: 'smooth' })
     if (to.hash) {
       return {
@@ -56,7 +57,15 @@ const router = createRouter({
     },
     {
       path: '/tambah-berita',
-      component: AddNews
+      component: AddNews,
+      beforeEnter: (to, from, next) => {
+        const authStore = useAuthStore()
+        if (authStore.isUserLoggedIn) {
+          next()
+        } else {
+          next('/')
+        }
+      }
     },
     {
       path: '/:catchAll(.*)',

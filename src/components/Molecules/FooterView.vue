@@ -98,7 +98,7 @@
                 ><a class="link link-hover">PENGUMUMAN DAN BERITA</a></RouterLink
               >
               <RouterLink to="/fasilitas"><a class="link link-hover">FASILITAS</a></RouterLink>
-              <RouterLink to="/tambah-berita"
+              <RouterLink to="/tambah-berita" v-if="authStore.isUserLoggedIn"
                 ><a class="link link-hover">Tambah Berita</a></RouterLink
               >
             </div>
@@ -106,6 +106,9 @@
               <span class="footer-title">About</span>
               <RouterLink to="/jadwal-dokter"
                 ><a class="link link-hover">Tentang Kami</a></RouterLink
+              >
+              <a class="link link-hover" @click="AdminLog" v-if="!authStore.isUserLoggedIn"
+                >Admin</a
               >
             </div>
           </div>
@@ -146,8 +149,31 @@
       </div>
     </footer>
   </div>
+
+  <LoginModals :showModal="isModalOpen" @close="isModalOpen = false" />
 </template>
 
-<script setup>
+<script>
 import { BrandFacebookIcon, BrandInstagramIcon, BrandWhatsappIcon } from 'vue-tabler-icons'
+import LoginModals from './Modals/LoginModals.vue'
+import { useAuthStore } from '../../assets/store/State'
+
+export default {
+  components: { BrandFacebookIcon, BrandInstagramIcon, BrandWhatsappIcon, LoginModals },
+  data() {
+    return {
+      isModalOpen: false
+    }
+  },
+  computed: {
+    authStore() {
+      return useAuthStore()
+    }
+  },
+  methods: {
+    AdminLog() {
+      this.isModalOpen = true
+    }
+  }
+}
 </script>
