@@ -17,7 +17,7 @@
           <div class="grid sm:text-base/loose">
             <div class="flex flex-col sm:flex sm:flex-row md:flex md:flex-row items-center">
               <span
-                class="self-center text-xs lg:text-sm whitespace-nowrap font-brush font-bold text-[#B2004E]"
+                class="self-center text-xs lg:text-sm whitespace-nowrap font-bold text-[#B2004E]"
                 >MELAYANI DENGAN KASIH
               </span>
             </div>

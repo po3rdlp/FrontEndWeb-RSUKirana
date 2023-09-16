@@ -13,7 +13,7 @@
   </div>
 
   <div v-else-if="!isLoading" class="flex justify-center w-full h-full p-5 mt-5">
-    <div class="grid md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 w-full h-full gap-5">
+    <div class="grid grid-cols-4 w-fit h-full gap-10">
       <div
         v-for="datas in data"
         :key="datas.id"
@@ -31,21 +31,23 @@
             <p>{{ datas.date }}</p>
           </div>
         </div>
-        <button
-          v-if="authStore.isUserLoggedIn"
-          @click="deleteNews(datas._id)"
-          class="btn btn-ghost absolute bottom-0 right-0"
-        >
-          <TrashIcon />
-        </button>
-        <RouterLink
-          :to="`/berita-informasi/${datas._id}`"
-          :params="{ id: datas._id }"
-          class="btn"
-          v-else
-          @click="test"
-          >Selengkapnya</RouterLink
-        >
+        <div class="flex justify-between">
+          <button
+            v-if="authStore.isUserLoggedIn"
+            @click="deleteNews(datas._id)"
+            class="btn btn-ghost absolute bottom-0 right-0"
+          >
+            <TrashIcon />
+          </button>
+          <RouterLink
+            :to="`/berita-informasi/${datas._id}`"
+            :params="{ id: datas._id }"
+            class="btn btn-ghost btn-sm"
+            v-else
+            @click="test"
+            >Selengkapnya</RouterLink
+          >
+        </div>
       </div>
     </div>
   </div>
