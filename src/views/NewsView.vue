@@ -8,12 +8,13 @@
       </div>
     </div>
   </div>
+  <h1 class="text text-2xl font-bold text-center pt-5">BERITA/INFORMASI</h1>
   <div v-if="isLoading" class="flex justify-center items-center h-56">
     <LoadingView />
   </div>
 
-  <div v-else-if="!isLoading" class="flex justify-center w-full h-full p-5 mt-5">
-    <div class="grid grid-cols-4 w-fit h-full gap-10">
+  <div v-else-if="data" class="flex justify-center w-full h-full p-5 mt-5">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-fit h-full gap-10">
       <div
         v-for="datas in data"
         :key="datas.id"

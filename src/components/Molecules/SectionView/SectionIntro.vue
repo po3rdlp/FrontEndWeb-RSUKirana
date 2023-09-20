@@ -2,8 +2,8 @@
   <section class="shadow-sm">
     <div class="carousel snap-center w-full h-full bg-white" id="carousel">
       <div class="carousel-item w-full" ref="carousel1">
-        <div class="hero min-h-screen bg-right-top bg-fixed section1">
-          <div class="hero-overlay bg-opacity-30"></div>
+        <div class="hero min-h-screen bg-center bg-fixed section1">
+          <div class="hero-overlay backdrop-blur-[2px]"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="pt-8">
               <h1
@@ -27,9 +27,6 @@
 
 <style scoped>
 .section1 {
-  background-image: url('../../img/Ruangan/Gedung.jpeg');
-}
-.section2 {
-  background-image: url('../../img/Gedung/RSIAKIRANA1.jpeg');
+  background-image: url('../../img/Gedung/RSIAKIRANA2.jpeg');
 }
 </style>

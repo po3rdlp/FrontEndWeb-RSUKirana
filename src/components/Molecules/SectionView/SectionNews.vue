@@ -21,7 +21,9 @@
             class="max-w-xl flex-col items-start justify-between transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 headline"
           >
             <div class="flex items-center gap-x-4 text-xs">
-              <time datetime="2020-03-16" class="text-black pb-2">{{ item.date }}</time>
+              <time datetime="2020-03-16" class="text-black pb-2">{{
+                formattedDate(item.date)
+              }}</time>
             </div>
             <div>
               <img
@@ -42,9 +44,6 @@
               <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
                 {{ item.desc }}
               </p>
-            </div>
-            <div class="relative mt-8 flex items-center gap-x-4">
-              <img src="../../img/Logo.png" alt="" class="h-10 w-10 rounded-lg bg-gray-50" />
             </div>
           </article>
         </div>
@@ -137,6 +136,18 @@ export default {
       if (this.currentPage > 0) {
         this.currentPage--
       }
+    },
+    formattedDate(dateTime) {
+      if (dateTime) {
+        const dateObj = new Date(dateTime)
+        // Format the date as "YYYY-MM-DD"
+        const formattedDate = dateObj.toISOString().split('T')[0]
+        // Format the time as "HH:MM:SS"
+        const formattedTime = dateObj.toLocaleTimeString()
+        // Combine date and time
+        return `${formattedDate} ${formattedTime}`
+      }
+      return '' // Handle cases where date is not available
     }
   }
 }

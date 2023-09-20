@@ -63,28 +63,28 @@
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
       <div>
         <img
-          src="../components/img/jadwal/Jadwal_dr._Meiske_runkat.png"
+          src="../components/img/jadwal/Jadwal_dr._Meiske_runkat.webp"
           alt="Dr"
           class="h-auto max-w-full rounded-lg"
         />
       </div>
       <div>
         <img
-          src="../components/img/jadwal/Jadwal_dr_Yuniar.png"
+          src="../components/img/jadwal/Jadwal_dr_Yuniar.webp"
           alt="Dr"
           class="h-auto max-w-full rounded-lg"
         />
       </div>
       <div>
         <img
-          src="../components/img/jadwal/Jadwal_dr_Joel_Osbert.png"
+          src="../components/img/jadwal/Jadwal_dr_Joel_Osbert.webp"
           alt="Dr"
           class="h-auto max-w-full rounded-lg"
         />
       </div>
       <div>
         <img
-          src="../components/img/jadwal/Jadwal_dr_Jennifer.png"
+          src="../components/img/jadwal/Jadwal_dr_Jennifer.webp"
           alt="Dr"
           class="h-auto max-w-full rounded-lg"
         />
@@ -100,21 +100,21 @@
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
       <div>
         <img
-          src="../components/img/jadwal/Jadwal_r_arthur.png"
+          src="../components/img/jadwal/Jadwal_r_arthur.webp"
           alt="Dr"
           class="h-auto max-w-full rounded-lg"
         />
       </div>
       <div>
         <img
-          src="../components/img/jadwal/Jadwal_dr._novita_tanasal.png"
+          src="../components/img/jadwal/Jadwal_dr._novita_tanasal.webp"
           alt="Dr"
           class="h-auto max-w-full rounded-lg"
         />
       </div>
       <div>
         <img
-          src="../components/img/jadwal/Jadwal_dr_Bisuk_sedli.png"
+          src="../components/img/jadwal/Jadwal_dr_Bisuk_sedli.webp"
           alt="Dr"
           class="h-auto max-w-full rounded-lg"
         />
@@ -127,21 +127,21 @@
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
       <div>
         <img
-          src="../components/img/jadwal/Jadwal_dr_Irene.png"
+          src="../components/img/jadwal/Jadwal_dr_Irene.webp"
           alt="Dr"
           class="h-auto max-w-full rounded-lg"
         />
       </div>
       <div>
         <img
-          src="../components/img/jadwal/Jadwal_dr_Jane.png"
+          src="../components/img/jadwal/Jadwal_dr_Jane.webp"
           alt="Dr"
           class="h-auto max-w-full rounded-lg"
         />
       </div>
       <div>
         <img
-          src="../components/img/jadwal/Jadwal_dr_Novie_Rampengan.png"
+          src="../components/img/jadwal/Jadwal_dr_Novie_Rampengan.webp"
           alt="Dr"
           class="h-auto max-w-full rounded-lg"
         />
@@ -154,7 +154,7 @@
     <div class="grid grid-cols-2 md:grid-cols-3 lg:3 gap-4">
       <div>
         <img
-          src="../components/img/jadwal/Jadwal_prof_Starry_Rampengan.png"
+          src="../components/img/jadwal/Jadwal_prof_Starry_Rampengan.webp"
           alt="Dr"
           class="h-auto max-w-full rounded-lg"
           onclick="modal.showModal()"
@@ -168,7 +168,7 @@
     <div class="grid grid-cols-2 md:grid-cols-3 lg:3 gap-4">
       <div>
         <img
-          src="../components/img/jadwal/Jadwal_dr_maria_kaunang.png"
+          src="../components/img/jadwal/Jadwal_dr_maria_kaunang.webp"
           alt="Dr"
           class="h-auto max-w-full rounded-lg"
           onclick="openModal()"

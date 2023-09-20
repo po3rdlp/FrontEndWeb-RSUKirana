@@ -5,7 +5,7 @@
     >
       <a class="flex items-center">
         <img
-          src="../img/Logo.png"
+          src="../img/Logo.svg"
           class="h-14 w-14 md:h-20 md:w-20 lg:w-16 lg:h-16 mr-5"
           alt="Flowbite Logo"
         />
@@ -212,6 +212,7 @@ const closeMenuOnClickOutside = () => {
 
 const logOut = () => {
   authStore.logout()
+  window.location.reload()
 }
 
 const whatsappClick = () => {

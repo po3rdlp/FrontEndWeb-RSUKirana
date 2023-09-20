@@ -2,6 +2,8 @@
   "name": "web-rsu-kirana",
   "version": "0.0.0",
   "private": true,
+  "main": "dist/index",
+  "types": "dist/index",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -20,7 +22,9 @@
     "compressorjs": "^1.2.1",
     "pinia": "^2.1.6",
     "scrollreveal": "^4.0.9",
+    "v-lazy-image": "^2.1.1",
     "vue": "^3.3.4",
+    "vue-lazyload": "^3.0.0",
     "vue-router": "^4.2.2",
     "vue-scroll-reveal": "^2.1.0",
     "vue-tabler-icons": "^2.21.0"

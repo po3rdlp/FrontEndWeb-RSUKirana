@@ -9,6 +9,7 @@
           type="text"
           class="input input-sm border border-black"
           placeholder="Judul Berita"
+          :disabled="isLoading"
         />
         <label for="desc" class="label">Deskripsi Berita</label>
         <input
@@ -16,46 +17,33 @@
           v-model="desc"
           class="input input-sm border border-black"
           placeholder="Deskripsi Berita"
+          :disabled="isLoading"
         />
         <label for="gambar" class="label">Gambar</label>
         <input @change="handleFileChange" type="file" class="input file-input" accept="image/*" />
-
-        <button class="btn btn-primary mt-5" type="submit">Submit</button>
+        <div class="flex justify-center items-center" v-if="isLoading">
+          <LoadingView />
+        </div>
+        <button class="btn btn-primary mt-5" type="submit" :disabled="isLoading">Submit</button>
       </form>
-    </div>
-    <div class="flex justify-center items-center">
-      <table></table>
     </div>
   </div>
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue'
+import { ref } from 'vue'
 import Compressor from 'compressorjs'
+import LoadingView from '../components/Molecules/LoadingView.vue'
 import api from '../assets/config/api.config'
 
+let isLoading = ref(false)
 let title = ''
 let desc = ''
 // eslint-disable-next-line no-unused-vars
 let gambar = null
-// eslint-disable-next-line no-unused-vars
-let data = ref(null)
-
-const newsData = () => {
-  api
-    .get('/dev/v1/news')
-    .then((res) => {
-      data.value = res.data
-      console.log(res.data)
-    })
-    .catch((err) => console.log(err))
-}
-
-onMounted(() => {
-  newsData()
-})
 
 const submitForm = async () => {
+  isLoading.value = true
   console.log(`Judul: ${title}, deskripsi: ${desc}`)
   const formData = new FormData()
 
@@ -100,9 +88,11 @@ const submitForm = async () => {
     })
 
     console.log(response.data.message)
-    window.location.reload()
   } catch (error) {
     console.error('Error posting data:', error)
+  } finally {
+    isLoading.value = false
+    window.location.reload()
   }
 }
 
