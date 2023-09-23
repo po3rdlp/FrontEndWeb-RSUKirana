@@ -10,17 +10,25 @@
           class="input input-sm border border-black"
           placeholder="Judul Berita"
           :disabled="isLoading"
+          required
         />
         <label for="desc" class="label">Deskripsi Berita</label>
-        <input
+        <textarea
           type="text"
           v-model="desc"
-          class="input input-sm border border-black"
+          class="textarea textarea-bordered textarea-lg w-full"
           placeholder="Deskripsi Berita"
           :disabled="isLoading"
-        />
+          required
+        ></textarea>
         <label for="gambar" class="label">Gambar</label>
-        <input @change="handleFileChange" type="file" class="input file-input" accept="image/*" />
+        <input
+          @change="handleFileChange"
+          type="file"
+          class="input file-input"
+          accept="image/*"
+          required
+        />
         <div class="flex justify-center items-center" v-if="isLoading">
           <LoadingView />
         </div>
@@ -44,6 +52,8 @@ let gambar = null
 
 const submitForm = async () => {
   isLoading.value = true
+  // eslint-disable-next-line no-undef
+  const token = $cookies.get('token')
   console.log(`Judul: ${title}, deskripsi: ${desc}`)
   const formData = new FormData()
 
@@ -83,7 +93,8 @@ const submitForm = async () => {
   try {
     const response = await api.post('/dev/v1/addNews', formData, {
       headers: {
-        'Content-Type': 'multipart/form-data'
+        'Content-Type': 'multipart/form-data',
+        Authorization: `Bearer ${token}`
       }
     })
 

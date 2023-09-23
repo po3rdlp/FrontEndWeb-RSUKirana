@@ -9,7 +9,7 @@
     </div>
   </div>
   <h1 class="text text-2xl font-bold text-center pt-5">BERITA/INFORMASI</h1>
-  <div v-if="isLoading" class="flex justify-center items-center h-56">
+  <div v-if="isLoading || isLoadingDelete" class="flex justify-center items-center h-56">
     <LoadingView />
   </div>
 
@@ -45,7 +45,6 @@
             :params="{ id: datas._id }"
             class="btn btn-ghost btn-sm"
             v-else
-            @click="test"
             >Selengkapnya</RouterLink
           >
         </div>
@@ -70,7 +69,8 @@ export default {
     return {
       data: null,
       newsId: null,
-      isLoading: false
+      isLoading: false,
+      isLoadingDelete: false
     }
   },
   mounted() {
@@ -94,17 +94,22 @@ export default {
         this.isLoading = false
       }
     },
-    deleteNews(id) {
-      api
-        .delete(`/dev/v1/deleteNews/${id}`)
-        .then((res) => {
-          console.log(res.data.message)
-          window.location.reload()
-        })
-        .catch((err) => console.log(err))
-    },
-    test() {
-      console.log(`Hello world`)
+    async deleteNews(id) {
+      const token = this.$cookies.get('token')
+      const headers = {
+        Authorization: `Bearer ${token}`
+      }
+
+      this.isLoadingDelete = true
+      try {
+        const response = await api.delete(`/dev/v1/deleteNews/${id}`, { headers })
+        console.log(response.data)
+      } catch (err) {
+        console.log('gagal', err)
+      } finally {
+        this.isLoadingDelete = false
+        window.location.reload()
+      }
     }
   }
 }

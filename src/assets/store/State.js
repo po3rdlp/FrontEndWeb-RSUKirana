@@ -1,22 +1,40 @@
 import { defineStore } from 'pinia'
+import api from '../config/api.config.js'
+import Cookies from 'js-cookie'
 
 export const useAuthStore = defineStore({
   id: 'auth',
   state: () => ({
+    cookie: Cookies.get('token') === null,
     isLoggedIn: localStorage.getItem('isLoggedIn') === 'true',
-    user: null
+    wrong: false
   }),
   getters: {
-    isUserLoggedIn: (state) => state.isLoggedIn
+    isUserLoggedIn: (state) => state.isLoggedIn,
+    isWrong: (state) => state.wrong
   },
   actions: {
-    login() {
-      this.isLoggedIn = true
-      localStorage.setItem('isLoggedIn', 'true')
+    async login(username, password) {
+      try {
+        const response = await api.post('/user/dev/v1/login', {
+          userName: username,
+          password: password
+        })
+        console.log(response.data)
+        const { token } = response.data
+
+        Cookies.set('token', token)
+        localStorage.setItem('isLoggedIn', 'true')
+        window.location.reload()
+      } catch (err) {
+        console.log(err)
+        this.wrong = true
+      }
     },
     logout() {
-      this.isLoggedIn = false
+      Cookies.remove('token')
       localStorage.setItem('isLoggedIn', 'false')
+      window.location.reload()
     }
   }
 })

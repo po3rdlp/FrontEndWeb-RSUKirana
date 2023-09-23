@@ -81,6 +81,7 @@
 import { NewsIcon, ChevronLeftIcon, ChevronRightIcon } from 'vue-tabler-icons'
 import api from '../../../assets/config/api.config'
 import newsSkeleton from '../Skeleton/NewsSkeleton.vue'
+import { useAuthStore } from '../../../assets/store/State'
 
 export default {
   components: { NewsIcon, newsSkeleton, ChevronLeftIcon, ChevronRightIcon },
@@ -117,10 +118,27 @@ export default {
   methods: {
     async getNews() {
       this.isLoading = true
+      const authStore = useAuthStore()
       try {
         const response = await api.get('/dev/v1/news')
         console.log(response.data)
         this.data = response.data
+
+        //checktokenvalidornot
+        try {
+          const token = this.$cookies.get('token')
+          if (!token) {
+            // console.log('No token found in cookies')
+            return
+          }
+          const headers = {
+            Authorization: `Bearer ${token}`
+          }
+          const response = await api.get('user/dev/v1/test', { headers })
+          console.log(response.data.message)
+        } catch (err) {
+          authStore.logout()
+        }
       } catch (err) {
         console.log(err)
       } finally {
@@ -140,14 +158,14 @@ export default {
     formattedDate(dateTime) {
       if (dateTime) {
         const dateObj = new Date(dateTime)
-        // Format the date as "YYYY-MM-DD"
+
         const formattedDate = dateObj.toISOString().split('T')[0]
-        // Format the time as "HH:MM:SS"
+
         const formattedTime = dateObj.toLocaleTimeString()
-        // Combine date and time
+
         return `${formattedDate} ${formattedTime}`
       }
-      return '' // Handle cases where date is not available
+      return ''
     }
   }
 }

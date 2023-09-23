@@ -9,10 +9,10 @@
         <form @submit.prevent="adminLogin">
           <label class="label font-bold">Id :</label>
           <input
-            type="number"
-            placeholder="id"
+            type="String"
+            placeholder="username"
             class="input input-sm border border-black"
-            v-model="id"
+            v-model="username"
           />
           <label class="label font-bold">Password :</label>
           <input
@@ -23,6 +23,9 @@
           />
           <div class="mt-3">
             <button class="btn btn-primary btn-sm" type="submit">Log In</button>
+            <p class="text text-red-500 text-center font-bold pt-5" v-if="authStore.isWrong">
+              "WRONG PASSWORD OR USERNAME"
+            </p>
           </div>
         </form>
       </div>
@@ -31,7 +34,8 @@
 </template>
 
 <script>
-import { useAuthStore } from '../../../assets/store/State.js'
+// import api from '../../../assets/config/api.config'
+import { useAuthStore } from '../../../assets/store/State'
 
 export default {
   props: {
@@ -39,27 +43,25 @@ export default {
   },
   data() {
     return {
-      user: {
-        id: 10,
-        password: 'qwerty124'
-      },
-      id: null,
-      password: null
+      username: '',
+      password: ''
+    }
+  },
+  computed: {
+    authStore() {
+      return useAuthStore()
     }
   },
   methods: {
     closeModal() {
       this.$emit('close')
+      this.username = ''
+      this.password = ''
+      this.authStore.isWrong = false
     },
-    adminLogin() {
+    async adminLogin() {
       const authStore = useAuthStore()
-
-      if (this.id === this.user.id && this.password === this.user.password) {
-        authStore.login()
-        this.closeModal()
-      } else {
-        console.log('GAGAL')
-      }
+      authStore.login(this.username, this.password)
     }
   }
 }

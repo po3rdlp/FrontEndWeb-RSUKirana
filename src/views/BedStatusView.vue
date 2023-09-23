@@ -6,9 +6,7 @@
         <h1 class="mb-5 text-2xl md:text-3xl lg:text-5xl font-bold text-gray-200">
           KETERSEDIAAN TEMPAT TIDUR
         </h1>
-        <p class="mb-5">
-          Anda dapat melihat Jadwal Dokter di bawah. Jadwal Dokter Terkini dan Terupdate.
-        </p>
+        <p class="mb-5">Ketersediaan Jumlah Tempat Tidur RSIA KIRANA MANADO</p>
       </div>
     </div>
   </div>

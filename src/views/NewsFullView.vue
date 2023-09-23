@@ -25,7 +25,7 @@
           <img
             :src="`data:image/png;base64,${datas.image}`"
             alt="news image"
-            class="w-56 h-20 md:w-96 md:h-40 lg:h-full lg:w-96 rounded-2xl"
+            class="w-56 h-20 md:w-96 md:h-40 lg:h-82 lg:w-56 rounded-2xl"
           />
           <RouterLink
             :to="`/berita-informasi/${datas._id}`"
@@ -87,7 +87,7 @@ export default {
     async getNews() {
       try {
         const response = await api.get(`/dev/v1/news/${this.id}`)
-        console.log(response.data)
+
         this.dataAlone = response.data
       } catch (err) {
         console.log(err)
@@ -97,7 +97,6 @@ export default {
       this.isLoading = true
       try {
         const response = await api.get(`/dev/v1/news/`)
-        console.log(response.data)
         this.allData = response.data
       } catch (err) {
         console.log(err)
@@ -109,7 +108,7 @@ export default {
       this.isLoading = true
       try {
         const response = await api.get(`/dev/v1/news/${id}`)
-        console.log(response.data)
+
         this.dataAlone = response.data
       } catch (err) {
         console.log(err)

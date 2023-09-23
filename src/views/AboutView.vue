@@ -95,55 +95,55 @@
         class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 sm:grid-cols-3 lg:grid-cols-6 dark:text-gray-400 overflow-y-auto pt-5 p-5"
       >
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/AIA.jpg" alt="logo" />
+          <img src="../components/img/sponsor/AIA.webp" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/BPJS.png" alt="logo" />
+          <img src="../components/img/sponsor/BPJS.webp" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/ASTRALIFE.png" alt="logo" />
+          <img src="../components/img/sponsor/ASTRALIFE.webp" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/BCA.png" alt="logo" />
+          <img src="../components/img/sponsor/BCA.webp" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/BRI.png" alt="logo" />
+          <img src="../components/img/sponsor/BRI.webp" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/Equity.jpg" alt="logo" />
+          <img src="../components/img/sponsor/Equity.webp" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/FULLERTON.png" alt="logo" />
+          <img src="../components/img/sponsor/FULLERTON.webp" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/FWD.png" alt="logo" />
+          <img src="../components/img/sponsor/FWD.webp" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/GENERALI.png" alt="logo" />
+          <img src="../components/img/sponsor/GENERALI.webp" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/global.png" alt="logo" />
+          <img src="../components/img/sponsor/global.webp" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/JASINDO.jpg" alt="logo" />
+          <img src="../components/img/sponsor/JASINDO.webp" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/JKN.jpg" alt="logo" />
+          <img src="../components/img/sponsor/JKN.webp" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/LIPPO.jpg" alt="logo" />
+          <img src="../components/img/sponsor/LIPPO.webp" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/MAG.png" alt="logo" />
+          <img src="../components/img/sponsor/MAG.webp" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/MEDITAP.png" alt="logo" />
+          <img src="../components/img/sponsor/MEDITAP.webp" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/SOMPO.png" alt="logo" />
+          <img src="../components/img/sponsor/SOMPO.webp" alt="logo" />
         </a>
         <a class="flex items-center lg:justify-center" target="_blank">
-          <img src="../components/img/sponsor/TASPEN.png" alt="logo" />
+          <img src="../components/img/sponsor/TASPEN.webp" alt="logo" />
         </a>
       </div>
     </div>
