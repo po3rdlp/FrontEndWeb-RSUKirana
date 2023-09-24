@@ -136,15 +136,9 @@
       </div>
       <div class="md:place-self-center md:justify-self-end">
         <div class="flex justify-evenly gap-4">
-          <p class="text-xs text-gray-400">
-            Dikembangkan Oleh
-            <a
-              class="font-bold text-sm text-white"
-              href="https://github.com/po3rdlp"
-              target="_blank"
-              >Pox</a
-            >
-          </p>
+          <a class="font-bold text-sm text-white" href="https://github.com/po3rdlp" target="_blank"
+            >LIHAT PENGEMBANG</a
+          >
         </div>
       </div>
     </footer>

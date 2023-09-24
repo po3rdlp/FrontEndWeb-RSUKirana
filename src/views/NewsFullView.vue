@@ -15,7 +15,9 @@
         </div>
         <div>
           <label class="label text text-lg font-bold">{{ dataAlone.title }}</label>
-          <p>{{ dataAlone.desc }}</p>
+          <div>
+            <p v-html="formattedDesc" class="whitespace-pre-line"></p>
+          </div>
         </div>
       </div>
       <div
@@ -25,7 +27,7 @@
           <img
             :src="`data:image/png;base64,${datas.image}`"
             alt="news image"
-            class="w-56 h-20 md:w-96 md:h-40 lg:h-82 lg:w-56 rounded-2xl"
+            class="w-56 h-20 md:w-96 md:h-40 lg:h-60 lg:w-56 rounded-2xl"
           />
           <RouterLink
             :to="`/berita-informasi/${datas._id}`"
@@ -72,6 +74,17 @@ export default {
         const formattedTime = dateObj.toLocaleTimeString()
 
         return `${formattedDate} ${formattedTime}`
+      }
+      return ''
+    },
+    formattedDesc() {
+      if (this.dataAlone && this.dataAlone.desc) {
+        // Split the description value into paragraphs and format them with <p> tags
+        const paragraphs = this.dataAlone.desc
+          .split('\n')
+          .map((paragraph) => `<p>${paragraph}</p>`)
+          .join('')
+        return paragraphs
       }
       return ''
     }

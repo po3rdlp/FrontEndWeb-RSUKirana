@@ -29,6 +29,7 @@
           accept="image/*"
           required
         />
+
         <div class="flex justify-center items-center" v-if="isLoading">
           <LoadingView />
         </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="hero min-h-screen imgg">
-    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-overlay backdrop-blur-[2px]"></div>
     <div class="hero-content text-center text-neutral-content">
       <div class="max-w-md">
         <h1 class="mb-5 text-2xl md:text-3xl lg:text-5xl font-bold">

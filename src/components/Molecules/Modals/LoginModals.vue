@@ -57,7 +57,6 @@ export default {
       this.$emit('close')
       this.username = ''
       this.password = ''
-      this.authStore.isWrong = false
     },
     async adminLogin() {
       const authStore = useAuthStore()

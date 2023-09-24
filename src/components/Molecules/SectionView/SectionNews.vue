@@ -20,7 +20,7 @@
           <article
             class="max-w-xl flex-col items-start justify-between transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 headline"
           >
-            <div class="flex items-center gap-x-4 text-xs">
+            <div class="flex items-center gap-x-4 text-xs" @click="test(item._id)">
               <time datetime="2020-03-16" class="text-black pb-2">{{
                 formattedDate(item.date)
               }}</time>
@@ -36,10 +36,12 @@
               <h3
                 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
               >
-                <a href="#">
-                  <span class="absolute inset-0"></span>
-                  {{ item.title }}
-                </a>
+                <RouterLink :to="`/berita-informasi/${item._id}`" :params="{ id: item._id }">
+                  <p @click="test(item._id)">
+                    <span class="absolute inset-0"></span>
+                    {{ item.title }}
+                  </p>
+                </RouterLink>
               </h3>
               <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
                 {{ item.desc }}
@@ -134,7 +136,7 @@ export default {
           const headers = {
             Authorization: `Bearer ${token}`
           }
-          const response = await api.get('user/dev/v1/test', { headers })
+          const response = await api.get('/dev/v1/test', { headers })
           console.log(response.data.message)
         } catch (err) {
           authStore.logout()
@@ -166,6 +168,9 @@ export default {
         return `${formattedDate} ${formattedTime}`
       }
       return ''
+    },
+    test(id) {
+      console.log(id)
     }
   }
 }
