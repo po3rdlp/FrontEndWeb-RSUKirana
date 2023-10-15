@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-gradient-to-r from-gray-50 from-5% via-gray-400 via-50% to-gray-50">
+  <nav class="bg-gradient-to-r from-gray-50 from-5% via-gray-400 via-50% to-gray-50 shadow-xl">
     <div
       class="max-w-screen-md md:max-w-screen-md lg:max-w-screen-xl flex flex-wrap items-center mx-auto justify-between p-3"
     >
@@ -58,7 +58,7 @@
               </label>
               <ul
                 tabindex="0"
-                class="dropdown-content menu p-3 gap-3 shadow bg-base-100 w-56 rounded-lg"
+                class="dropdown-content menu p-3 gap-3 shadow-xl bg-base-200 w-56 rounded-sm"
                 v-if="toggleDropdown"
               >
                 <li class="flex justify-center">
@@ -98,6 +98,17 @@
                       v-on:click="closeInformationToggle"
                     >
                       <span class="">FASILITAS</span>
+                    </RouterLink></a
+                  >
+                </li>
+                <li>
+                  <a>
+                    <RouterLink
+                      to="/indikator-mutu"
+                      @click="closeToggle"
+                      v-on:click="closeInformationToggle"
+                    >
+                      <span class="">Indikator Mutu</span>
                     </RouterLink></a
                   >
                 </li>

@@ -5,6 +5,7 @@ import router from './router'
 import { createPinia } from 'pinia'
 import VueLazyLoad from 'vue-lazyload'
 import VueCookies from 'vue-cookies'
+import Vue3Autocounter from 'vue3-autocounter'
 
 // Font Awesome Import
 import FontAwesome from './assets/FontAwesome/FontAwesome.js'
@@ -19,4 +20,5 @@ app.use(VueLazyLoad, {
   attempt: 1
 })
 app.mount('#app')
+app.component('vue3-autocounter', Vue3Autocounter)
 app.component('font-awesome-icon', FontAwesome)

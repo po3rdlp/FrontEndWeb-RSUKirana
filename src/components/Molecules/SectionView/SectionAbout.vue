@@ -16,7 +16,9 @@
         />
       </div>
       <div class="headline">
-        <h1 class="flex text-5xl font-bold"><InfoCircleIcon class="mr-2" /> TENTANG KAMI</h1>
+        <h1 class="flex items-center gap-3 text-5xl font-bold">
+          <InfoCircleIcon class="mr-2" /> TENTANG KAMI
+        </h1>
         <p class="py-6">
           Rumah Sakit Ibu dan Anak Kirana adalah rumah sakit khusus tipe C yang berlokasi di pusat
           kota Manado. Kami berkomitmen untuk memberikan pelayanan terbaik kepada masyarakat sesuai

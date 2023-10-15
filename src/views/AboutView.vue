@@ -89,7 +89,9 @@
     </div>
   </div>
 
-  <section class="bg-white">
+  <SectionSponsor />
+
+  <!-- <section class="bg-white">
     <div class="max-w-screen-xl px-4 pb-10 mx-auto lg:pb-2">
       <div
         class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 sm:grid-cols-3 lg:grid-cols-6 dark:text-gray-400 overflow-y-auto pt-5 p-5"
@@ -147,7 +149,7 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
 </template>
 
 <style scoped>
@@ -158,10 +160,12 @@
 
 <script>
 import scrollRevealInstance from '../../src/assets/ScrollReveal/ScrollReveal'
+import SectionSponsor from '../components/Molecules/SectionView/SectionSponsor.vue'
 
 export default {
   mounted() {
     scrollRevealInstance()
-  }
+  },
+  components: { SectionSponsor }
 }
 </script>

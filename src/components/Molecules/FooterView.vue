@@ -81,7 +81,7 @@
 </template> -->
 
 <template>
-  <div class="bg-slate-900 p-10">
+  <div class="bg-slate-900 p-1 md:p-9 lg:p-10">
     <footer class="text-white">
       <div>
         <div class="flex justify-between p-5 w-full">

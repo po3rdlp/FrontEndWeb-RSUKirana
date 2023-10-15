@@ -8,7 +8,71 @@ import NewsView from '../views/NewsView.vue'
 import AddNews from '../views/AddNews.vue'
 import NotFound from '../views/NotFound.vue'
 import NewsFullView from '../views/NewsFullView.vue'
+import QualityIndicator from '../views/QualityIndicatorview.vue'
 import { useAuthStore } from '../assets/store/State'
+
+const routes = [
+  {
+    path: '/',
+    name: 'home',
+    component: () => import('../views/HomeView.vue')
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: AboutView
+  },
+  {
+    path: '/jadwal-dokter',
+    name: 'jadwal-dokter',
+    component: DoctorSchedule
+  },
+  {
+    path: '/registration',
+    name: 'registration',
+    component: RegistrasiView
+  },
+  {
+    path: '/jumlah-tempat-tidur',
+    name: 'jumlah-tempat-tidur',
+    component: BedStatusView
+  },
+  {
+    path: '/berita-informasi',
+    name: 'berita-informasi',
+    component: NewsView
+  },
+  {
+    path: '/fasilitas',
+    name: 'fasilitas',
+    component: FacilityView
+  },
+  {
+    path: '/berita-informasi/:id',
+    component: NewsFullView,
+    props: true
+  },
+  {
+    path: '/indikator-mutu',
+    component: QualityIndicator
+  },
+  {
+    path: '/tambah-berita',
+    component: AddNews,
+    beforeEnter: (to, from, next) => {
+      const authStore = useAuthStore()
+      if (authStore.isUserLoggedIn) {
+        next()
+      } else {
+        next('/')
+      }
+    }
+  },
+  {
+    path: '/:catchAll(.*)',
+    component: NotFound
+  }
+]
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,65 +83,12 @@ const router = createRouter({
         el: to.hash,
         behavior: 'smooth'
       }
-    } // else if (savedPosition) {return savedPosition}
-    else {
-      return { top: 0, behavior: 'smooth' }
+    } else {
+      return { top: 95, behavior: 'smooth' }
     }
   },
 
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: () => import('../views/HomeView.vue')
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: AboutView
-    },
-    {
-      path: '/jadwal-dokter',
-      component: DoctorSchedule
-    },
-    {
-      path: '/registration',
-      component: RegistrasiView
-    },
-    {
-      path: '/jumlah-tempat-tidur',
-      component: BedStatusView
-    },
-    {
-      path: '/berita-informasi',
-      component: NewsView
-    },
-    {
-      path: '/fasilitas',
-      component: FacilityView
-    },
-    {
-      path: '/berita-informasi/:id',
-      component: NewsFullView,
-      props: true
-    },
-    {
-      path: '/tambah-berita',
-      component: AddNews,
-      beforeEnter: (to, from, next) => {
-        const authStore = useAuthStore()
-        if (authStore.isUserLoggedIn) {
-          next()
-        } else {
-          next('/')
-        }
-      }
-    },
-    {
-      path: '/:catchAll(.*)',
-      component: NotFound
-    }
-  ]
+  routes
 })
 
 export default router

@@ -31,7 +31,13 @@
         />
 
         <div class="flex justify-center items-center" v-if="isLoading">
-          <LoadingView />
+          <Loading
+            v-model:active="isLoading"
+            :can-cancel="true"
+            :on-cancel="onCancel"
+            :is-full-page="fullPage"
+          />
+          />
         </div>
         <button class="btn btn-primary mt-5" type="submit" :disabled="isLoading">Submit</button>
       </form>
@@ -42,8 +48,9 @@
 <script setup>
 import { ref } from 'vue'
 import Compressor from 'compressorjs'
-import LoadingView from '../components/Molecules/LoadingView.vue'
 import api from '../assets/config/api.config'
+import Loading from 'vue-loading-overlay'
+import 'vue-loading-overlay/dist/css/index.css'
 
 let isLoading = ref(false)
 let title = ''

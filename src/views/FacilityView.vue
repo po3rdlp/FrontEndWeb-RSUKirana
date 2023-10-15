@@ -11,15 +11,15 @@
 
   <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
     <div class="max-w-screen-md mb-8 lg:mb-16">
-      <h2 class="mb-4 flex text-4xl font-extrabold">LAYANAN UNGGULAN KAMI</h2>
+      <h2 class="mb-4 flex items-center gap-3 text-4xl font-extrabold">
+        <CardsIcon /> LAYANAN UNGGULAN KAMI
+      </h2>
     </div>
     <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
       <div
         class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
       >
-        <div
-          class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
-        >
+        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12">
           <EmpathizeIcon />
         </div>
         <h3 class="mb-2 text-xl font-bold">PELAYANAN KESEHATAN IBU DAN ANAK</h3>
@@ -32,9 +32,7 @@
       <div
         class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 headline"
       >
-        <div
-          class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
-        >
+        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12">
           <HeartbeatIcon />
         </div>
         <h3 class="mb-2 text-xl font-bold">PELAYANAN JANTUNG</h3>
@@ -47,9 +45,7 @@
       <div
         class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 headline"
       >
-        <div
-          class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
-        >
+        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12">
           <MicroscopeIcon />
         </div>
         <h3 class="mb-2 text-xl font-bold">PEMERIKSAAN LABORATORIUM KLINIK</h3>
@@ -207,11 +203,11 @@
 </template>
 
 <script>
-import { EmpathizeIcon, HeartbeatIcon, MicroscopeIcon } from 'vue-tabler-icons'
+import { EmpathizeIcon, HeartbeatIcon, MicroscopeIcon, CardsIcon } from 'vue-tabler-icons'
 import scrollRevealInstance from '../assets/ScrollReveal/ScrollReveal'
 
 export default {
-  components: { EmpathizeIcon, HeartbeatIcon, MicroscopeIcon },
+  components: { EmpathizeIcon, HeartbeatIcon, MicroscopeIcon, CardsIcon },
 
   mounted() {
     scrollRevealInstance()

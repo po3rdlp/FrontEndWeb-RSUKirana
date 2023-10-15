@@ -6,7 +6,13 @@
     <NavigationBar />
   </div>
   <div>
-    <RouterView />
+    <router-view v-slot="{ Component, route }">
+      <Transition name="slide-fade" mode="out-in">
+        <div :key="route.name">
+          <component :is="Component"></component>
+        </div>
+      </Transition>
+    </router-view>
   </div>
   <div>
     <Footer />
@@ -18,3 +24,14 @@ import Footer from './components/Molecules/FooterView.vue'
 import NavigationBar from './components/Molecules/NavigationBar.vue'
 import UpperNavbar from './components/Molecules/UpperNavbar.vue'
 </script>
+
+<style scoped>
+.slide-fade-enter-active {
+  transition: all 0.5s ease-out;
+}
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(0.5em);
+  opacity: 0;
+}
+</style>

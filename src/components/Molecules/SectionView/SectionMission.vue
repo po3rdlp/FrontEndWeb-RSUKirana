@@ -1,7 +1,7 @@
 <template>
   <div class="grid justify-center w-full">
     <div class="grid max-w-7xl">
-      <h1 class="mb-4 mt-5 flex text-4xl font-extrabold text-gray-700">
+      <h1 class="mb-4 mt-5 flex items-center gap-2 text-4xl font-extrabold text-gray-700">
         <UsersGroupIcon class="mr-3" /> DOKTER KAMI
       </h1>
       <div>

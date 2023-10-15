@@ -5,19 +5,43 @@
     <li
       class="w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center"
     >
-      <span class="mb-1 text-teal-400 font-display text-5xl">0</span>
+      <span class="mb-1 text-teal-400 font-display text-5xl">
+        <vue3-autocounter
+          ref="counter"
+          :startAmount="100"
+          :endAmount="0"
+          :duration="2"
+          separator=","
+          :autoinit="true"
+      /></span>
       JUMLAH
     </li>
     <li
       class="w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center"
     >
-      <span class="mb-1 text-teal-400 font-display text-5xl">0</span>
+      <span class="mb-1 text-teal-400 font-display text-5xl">
+        <vue3-autocounter
+          ref="counter"
+          :startAmount="100"
+          :endAmount="0"
+          :duration="2"
+          separator=","
+          :autoinit="true"
+      /></span>
       TERISI
     </li>
     <li
       class="w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center"
     >
-      <span class="mb-1 text-teal-400 font-display text-5xl">0</span>
+      <span class="mb-1 text-teal-400 font-display text-5xl">
+        <vue3-autocounter
+          ref="counter"
+          :startAmount="100"
+          :endAmount="0"
+          :duration="2"
+          separator=","
+          :autoinit="true"
+      /></span>
       KOSONG
     </li>
   </ul>

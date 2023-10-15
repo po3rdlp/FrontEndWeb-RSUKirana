@@ -11,7 +11,7 @@
             :alt="dataAlone.title"
             class="w-96 h-full rounded-2xl"
           />
-          <span>{{ formattedDateTime }}</span>
+          <span class="flex gap-1"><ClockHour5Icon :size="20" />{{ formattedDateTime }}</span>
         </div>
         <div>
           <label class="label text text-lg font-bold">{{ dataAlone.title }}</label>
@@ -23,11 +23,11 @@
       <div
         class="flex lg:grid max-h-screen w-full md:w-full lg:w-80 gap-5 overflow-x-auto bg-gray-50 rounded-sm"
       >
-        <div v-for="datas in allData" :key="datas.id" class="grid pt-3">
+        <div v-for="datas in filteredAllData" :key="datas.id" class="pt-3">
           <img
             :src="`data:image/png;base64,${datas.image}`"
             alt="news image"
-            class="w-56 h-20 md:w-96 md:h-40 lg:h-60 lg:w-56 rounded-2xl"
+            class="w-24 h-20 md:w-96 md:h-40 lg:h-60 lg:w-56 rounded-2xl"
           />
           <RouterLink
             :to="`/berita-informasi/${datas._id}`"
@@ -35,6 +35,12 @@
             class="text-xs font-bold hover:text-gray-500"
             >{{ datas.title }}</RouterLink
           >
+          <div>
+            <p class="flex gap-1">
+              <ClockHour5Icon :size="20" />
+              <span class="text-sm">{{ formattedDateTimeInfo(datas.date) }}</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -44,9 +50,10 @@
 <script>
 import api from '../assets/config/api.config'
 import LoadingView from '../components/Molecules/LoadingView.vue'
+import { ClockHour5Icon } from 'vue-tabler-icons'
 
 export default {
-  components: { LoadingView },
+  components: { LoadingView, ClockHour5Icon },
   props: {
     id: String
   },
@@ -65,6 +72,9 @@ export default {
     }
   },
   computed: {
+    filteredAllData() {
+      return this.allData.filter((data) => data._id !== this.dataAlone?._id)
+    },
     formattedDateTime() {
       if (this.dataAlone.date) {
         const dateObj = new Date(this.dataAlone.date)
@@ -79,7 +89,6 @@ export default {
     },
     formattedDesc() {
       if (this.dataAlone && this.dataAlone.desc) {
-        // Split the description value into paragraphs and format them with <p> tags
         const paragraphs = this.dataAlone.desc
           .split('\n')
           .map((paragraph) => `<p>${paragraph}</p>`)
@@ -97,6 +106,16 @@ export default {
     this.getAllNews()
   },
   methods: {
+    formattedDateTimeInfo(dateTime) {
+      const options = {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit'
+      }
+      return new Date(dateTime).toLocaleString('en-US', options)
+    },
     async getNews() {
       try {
         const response = await api.get(`/dev/v1/news/${this.id}`)

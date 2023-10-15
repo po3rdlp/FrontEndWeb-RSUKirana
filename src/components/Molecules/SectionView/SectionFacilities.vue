@@ -2,7 +2,7 @@
   <section class="bg-gray-200">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
       <div class="max-w-screen-md mb-8 lg:mb-16">
-        <h2 class="mb-4 flex text-4xl font-extrabold">
+        <h2 class="mb-4 flex items-center gap-2 text-4xl font-extrabold">
           <ListDetailsIcon class="mr-3" /> FASILITAS PENUNJANG
         </h2>
       </div>
@@ -12,7 +12,7 @@
             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 headline"
           >
             <div
-              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12"
             >
               <MicroscopeIcon />
             </div>
@@ -28,7 +28,7 @@
             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 headline"
           >
             <div
-              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12"
             >
               <EyeTableIcon />
             </div>
@@ -45,7 +45,7 @@
             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 headline"
           >
             <div
-              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12"
             >
               <ActivityHeartbeatIcon />
             </div>
@@ -62,7 +62,7 @@
             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 headline"
           >
             <div
-              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12"
             >
               <HeartbeatIcon />
             </div>
@@ -78,7 +78,7 @@
             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 headline"
           >
             <div
-              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12"
             >
               <HeartFilledIcon />
             </div>
@@ -94,7 +94,7 @@
             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 headline"
           >
             <div
-              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12"
             >
               <HeartRateMonitorIcon />
             </div>
@@ -111,7 +111,7 @@
             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 headline"
           >
             <div
-              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12"
             >
               <RunIcon />
             </div>
@@ -127,7 +127,7 @@
             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 headline"
           >
             <div
-              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12"
             >
               <BoltIcon />
             </div>
@@ -143,7 +143,7 @@
             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 headline"
           >
             <div
-              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12"
             >
               <HeartRateMonitorIcon />
             </div>

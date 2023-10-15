@@ -8,7 +8,9 @@
       </div>
     </div>
   </div>
-  <h1 class="text text-2xl font-bold text-center pt-5">BERITA/INFORMASI</h1>
+  <h1 class="flex gap-3 px-5 items-center text text-2xl font-bold pt-5">
+    <ArticleIcon /> BERITA/INFORMASI
+  </h1>
   <div v-if="isLoading || isLoadingDelete" class="flex justify-center items-center h-56">
     <LoadingView />
   </div>
@@ -29,7 +31,7 @@
             {{ datas.desc }}
           </p>
           <div class="card-actions justify-end mt-5">
-            <p>{{ datas.date }}</p>
+            <p class="flex gap-1"><ClockHour5Icon :size="20" />{{ datas.date }}</p>
           </div>
         </div>
         <div class="flex justify-between">
@@ -60,11 +62,11 @@
 <script>
 import api from '../assets/config/api.config'
 import LoadingView from '../components/Molecules/LoadingView.vue'
-import { TrashIcon } from 'vue-tabler-icons'
+import { TrashIcon, ClockHour5Icon, ArticleIcon } from 'vue-tabler-icons'
 import { useAuthStore } from '../assets/store/State'
 
 export default {
-  components: { TrashIcon, LoadingView },
+  components: { TrashIcon, LoadingView, ClockHour5Icon, ArticleIcon },
   data() {
     return {
       data: null,

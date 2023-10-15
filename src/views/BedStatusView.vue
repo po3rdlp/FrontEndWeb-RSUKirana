@@ -11,7 +11,9 @@
     </div>
   </div>
   <div class="w-full h-full p-5">
-    <p class="text-center text-2xl text-gray-600 font-bold mb-5">KETERSEDIAAN TEMPAT TIDUR</p>
+    <p class="flex items-center gap-2 text-2xl text-gray-600 font-bold mb-5">
+      <BedIcon /> KETERSEDIAAN TEMPAT TIDUR
+    </p>
     <div class="overflow-x-auto">
       <table class="table table-zebra w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <!-- head -->
@@ -64,6 +66,7 @@
 
 <script setup>
 import BedCount from '../components/Molecules/BedCount.vue'
+import { BedIcon } from 'vue-tabler-icons'
 </script>
 
 <style scoped>

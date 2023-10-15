@@ -18,7 +18,7 @@
         </p>
       </div>
       <div class="flex justify-center items-center" @click="whatsappEmergencyClick">
-        <button class="btn btn-sm rounded-sm flex bg-purple-300 border-none text-xs">
+        <button class="btn btn-sm rounded-xl flex bg-purple-300 border-none text-xs">
           <AmbulanceIcon /> Emergency Calls : 082234567899
         </button>
       </div>
