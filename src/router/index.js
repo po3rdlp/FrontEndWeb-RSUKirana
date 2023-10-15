@@ -1,14 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import FacilityView from '../views/FacilityView.vue'
-import AboutView from '../views/AboutView.vue'
-import DoctorSchedule from '../views/Doctor-Schedule.vue'
-import RegistrasiView from '../views/RegistrasiView.vue'
-import BedStatusView from '../views/BedStatusView.vue'
-import NewsView from '../views/NewsView.vue'
-import AddNews from '../views/AddNews.vue'
-import NotFound from '../views/NotFound.vue'
-import NewsFullView from '../views/NewsFullView.vue'
-import QualityIndicator from '../views/QualityIndicatorview.vue'
 import { useAuthStore } from '../assets/store/State'
 
 const routes = [
@@ -20,45 +10,45 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    component: AboutView
+    component: () => import('../views/AboutView.vue')
   },
   {
     path: '/jadwal-dokter',
     name: 'jadwal-dokter',
-    component: DoctorSchedule
+    component: () => import('../views/Doctor-Schedule.vue')
   },
   {
     path: '/registration',
     name: 'registration',
-    component: RegistrasiView
+    component: () => import('../views/RegistrasiView.vue')
   },
   {
     path: '/jumlah-tempat-tidur',
     name: 'jumlah-tempat-tidur',
-    component: BedStatusView
+    component: () => import('../views/BedStatusView.vue')
   },
   {
     path: '/berita-informasi',
     name: 'berita-informasi',
-    component: NewsView
+    component: () => import('../views/NewsView.vue')
   },
   {
     path: '/fasilitas',
     name: 'fasilitas',
-    component: FacilityView
+    component: () => import('../views/FacilityView.vue')
   },
   {
     path: '/berita-informasi/:id',
-    component: NewsFullView,
+    component: () => import('../views/NewsFullView.vue'),
     props: true
   },
   {
     path: '/indikator-mutu',
-    component: QualityIndicator
+    component: () => import('../views/QualityIndicatorview.vue')
   },
   {
     path: '/tambah-berita',
-    component: AddNews,
+    component: () => import('../views/AddNews.vue'),
     beforeEnter: (to, from, next) => {
       const authStore = useAuthStore()
       if (authStore.isUserLoggedIn) {
@@ -70,7 +60,7 @@ const routes = [
   },
   {
     path: '/:catchAll(.*)',
-    component: NotFound
+    component: () => import('../views/NotFound.vue')
   }
 ]
 

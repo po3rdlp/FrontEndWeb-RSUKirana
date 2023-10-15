@@ -34,7 +34,7 @@
       </p>
     </div>
 
-    <div class="grid gap-10 px-5 mt-10">
+    <div class="grid gap-10 px-0 md:px-3 lg:px-5 mt-10">
       <!-- Indikator Mutu Pertama -->
       <div>
         <h3 class="font-extrabold text-xl">1. Kepatuhan Kebersihan Tangan</h3>

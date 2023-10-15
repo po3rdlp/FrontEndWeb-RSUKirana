@@ -2,7 +2,7 @@
   <div class="hidden lg:block">
     <UpperNavbar />
   </div>
-  <div class="sticky z-50 top-0 w-full">
+  <div class="sticky z-50 top-0 w-full shadow-xl">
     <NavigationBar />
   </div>
   <div>

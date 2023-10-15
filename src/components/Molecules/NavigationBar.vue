@@ -1,7 +1,7 @@
 <template>
   <nav class="bg-gradient-to-r from-gray-50 from-5% via-gray-400 via-50% to-gray-50 shadow-xl">
     <div
-      class="max-w-screen-md md:max-w-screen-md lg:max-w-screen-xl flex flex-wrap items-center mx-auto justify-between p-3"
+      class="max-w-screen-md md:max-w-screen-md lg:max-w-screen-xl flex flex-wrap items-center mx-auto justify-between p-2"
     >
       <a class="flex items-center">
         <img
@@ -44,7 +44,7 @@
         ref="menuRef"
       >
         <ul
-          class="font-medium flex flex-col justify-center px-11 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
+          class="font-medium flex flex-col justify-center px-11 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0"
         >
           <li class="group relative">
             <a @click="closeToggle">
@@ -58,13 +58,13 @@
               </label>
               <ul
                 tabindex="0"
-                class="dropdown-content menu p-3 gap-3 shadow-xl bg-base-200 w-56 rounded-sm"
+                class="dropdown-content menu menu-md p-3 gap-3 shadow-2xl bg-base-200 w-56 rounded-sm"
                 v-if="toggleDropdown"
               >
                 <li class="flex justify-center">
                   <a @click="closeToggle" v-on:click="closeInformationToggle">
                     <RouterLink to="/jadwal-dokter">
-                      <span class="">Jadwal Dokter</span>
+                      <span class="">JADWAL DOKTER</span>
                     </RouterLink></a
                   >
                 </li>
@@ -108,7 +108,7 @@
                       @click="closeToggle"
                       v-on:click="closeInformationToggle"
                     >
-                      <span class="">Indikator Mutu</span>
+                      <span class="">INDIKATOR MUTU</span>
                     </RouterLink></a
                   >
                 </li>

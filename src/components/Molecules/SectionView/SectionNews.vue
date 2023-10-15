@@ -170,9 +170,6 @@ export default {
         return `${formattedDate} ${formattedTime}`
       }
       return ''
-    },
-    test(id) {
-      console.log(id)
     }
   }
 }
