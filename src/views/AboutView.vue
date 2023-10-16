@@ -154,7 +154,7 @@
 
 <style scoped>
 .div1 {
-  background-image: url('../components/img/Gedung/RSIAKIRANA3.jpeg');
+  background-image: url('../components/img/Gedung/RSIAKIRANA3.webp');
 }
 </style>
 

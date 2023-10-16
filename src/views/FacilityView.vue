@@ -61,7 +61,7 @@
     <div class="hero h-full bg-base-200 headline">
       <div class="hero-content flex-col lg:flex-row" id="laboratorium">
         <img
-          src="../components/img/Ruangan/Laboratorium.jpg"
+          src="https://placehold.co/800?text=No+Image+?&font=montserrat"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -78,7 +78,7 @@
     <div class="hero min-h-screen bg-base-200 headline">
       <div class="hero-content flex-col lg:flex-row-reverse" id="ultrasonografi">
         <img
-          src="../components/img/5148009.jpg"
+          src="https://placehold.co/800?text=No+Image+?&font=montserrat"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -94,7 +94,7 @@
     <div class="hero h-full bg-base-200 headline">
       <div class="hero-content flex-col lg:flex-row" id="elektrokardiogram">
         <img
-          src="../components/img/Ruangan/EKG_(1).jpg"
+          src="https://placehold.co/800?text=No+Image+?&font=montserrat"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -109,7 +109,7 @@
     <div class="hero min-h-screen bg-base-200 headline">
       <div class="hero-content flex-col lg:flex-row-reverse" id="kardiotokografi">
         <img
-          src="../components/img/5148009.jpg"
+          src="https://placehold.co/800?text=No+Image+?&font=montserrat"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -124,7 +124,7 @@
     <div class="hero h-full bg-base-200 headline">
       <div class="hero-content flex-col lg:flex-row" id="ekokaridografi">
         <img
-          src="../components/img/Ruangan/EKG_(1).jpg"
+          src="../components/img/Ruangan/ekg-652c8bea714fa.webp"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -141,7 +141,7 @@
     <div class="hero min-h-screen bg-base-200 headline">
       <div class="hero-content flex-col lg:flex-row-reverse" id="holtermonitoring">
         <img
-          src="../components/img/Ruangan/holter_monitoring_(1).jpg"
+          src="../components/img/Ruangan/holter-monitoring-652c8beb4dd9d.webp"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -156,7 +156,7 @@
     <div class="hero h-full bg-base-200 headline">
       <div class="hero-content flex-col lg:flex-row" id="treadmill">
         <img
-          src="../components/img/Ruangan/Treadmil.jpg"
+          src="../components/img/Ruangan/treadmil-652c8bfff10be.webp"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -171,7 +171,7 @@
     <div class="hero min-h-screen bg-base-200 headline">
       <div class="hero-content flex-col lg:flex-row-reverse" id="eecp">
         <img
-          src="../components/img/Ruangan/EECP_(1).jpg"
+          src="../components/img/Ruangan/eecp-652c8c025a50e.webp"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -187,7 +187,7 @@
     <div class="hero h-full bg-base-200 headline">
       <div class="hero-content flex-col lg:flex-row" id="abpm">
         <img
-          src="../components/img/5148009.jpg"
+          src="https://placehold.co/800?text=No+Image+?&font=montserrat"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -217,6 +217,6 @@ export default {
 
 <style scoped>
 .imgg {
-  background-image: url('../components/img/Gedung/RSIAKIRANA3.jpeg');
+  background-image: url('../components/img/Ruangan/anna-shvets.webp');
 }
 </style>

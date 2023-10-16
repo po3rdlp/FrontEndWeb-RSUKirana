@@ -3,15 +3,18 @@
     <div class="hero-content flex-col lg:flex-row-reverse">
       <div class="relative p-5 lg:p-10 headline">
         <img
-          src="../../img/Gedung/RSIAKIRANA1.jpeg"
+          src="../../img/Gedung/RSIAKIRANA1.webp"
+          loading="lazy"
           class="w-96 md:max-w-md lg:max-w-lg rounded-lg shadow-2xl transition ease-in-out delay-150 hover:scale-95 hover:bg-indigo-500 duration-300 text-neutral-content"
         />
         <img
-          src="../../img/Gedung/RSIAKIRANA3.jpeg"
+          src="../../img/Gedung/RSIAKIRANA3.webp"
+          loading="lazy"
           class="absolute bottom-1 left-1 w-36 h-36 md:w-52 md:h-52 lg:w-52 lg:h-52 rounded-lg shadow-2xl transition ease-in-out delay-150 hover:scale-95 hover:bg-indigo-500 duration-300 text-neutral-content"
         />
         <img
-          src="../../img/Gedung/RSIAKIRANA1.jpeg"
+          src="../../img/Gedung/RSIAKIRANA1.webp"
+          loading="lazy"
           class="absolute top-1 right-1 w-36 h-36 md:w-52 md:h-52 lg:w-52 lg:h-52 rounded-lg shadow-2xl transition ease-in-out delay-150 hover:scale-95 hover:bg-indigo-500 duration-300 text-neutral-content"
         />
       </div>

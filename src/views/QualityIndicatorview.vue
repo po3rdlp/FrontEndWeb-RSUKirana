@@ -119,8 +119,6 @@
           </div>
         </div>
       </div>
-
-      <p class="text-center text-[50px] font-bold animate-bounce">UNDER DEVELOP ....</p>
     </div>
   </div>
 </template>

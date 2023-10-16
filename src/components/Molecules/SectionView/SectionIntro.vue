@@ -27,6 +27,6 @@
 
 <style scoped>
 .section1 {
-  background-image: url('../../img/Gedung/RSIAKIRANA2.jpeg');
+  background-image: url('../../img/Gedung/RSIAKIRANA2.webp');
 }
 </style>

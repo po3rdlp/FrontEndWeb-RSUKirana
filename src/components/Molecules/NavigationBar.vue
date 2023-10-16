@@ -33,10 +33,7 @@
         @click="toggleMenu"
       >
         <span class="sr-only">Open main menu</span>
-        <FontAwesomeIcon
-          icon="fa-solid fa-bars"
-          class="text text-sm sm:text-2xl text-black lg:text-2xl font-bold shadow-xl"
-        />
+        <Menu2Icon />
       </button>
       <div
         :class="{ hidden: !openToggle }"
@@ -180,7 +177,6 @@
 
 <script setup>
 import { useAuthStore } from '../../assets/store/State'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { ref, onMounted } from 'vue'
 import { onClickOutside } from '@vueuse/core'
 import { RouterLink } from 'vue-router'
@@ -191,7 +187,8 @@ import {
   BrandFacebookIcon,
   MailCheckIcon,
   AmbulanceIcon,
-  LogoutIcon
+  LogoutIcon,
+  Menu2Icon
 } from 'vue-tabler-icons'
 
 const openToggle = ref(false)

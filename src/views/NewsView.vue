@@ -119,6 +119,6 @@ export default {
 
 <style scoped>
 .imgg {
-  background-image: url('../components/img/Gedung/RSIAKIRANA3.jpeg');
+  background-image: url('../components/img/Gedung/RSIAKIRANA2.webp');
 }
 </style>

@@ -213,6 +213,6 @@ export default {
 
 <style scoped>
 .imgg {
-  background-image: url('../components/img/young-asia-female-doctor-white-medical-uniform-using-clipboard-is-delivering-great-news-talk-discuss-results_11zon.jpg');
+  background-image: url('../components/img/Ruangan/doctor-discuss.webp');
 }
 </style>

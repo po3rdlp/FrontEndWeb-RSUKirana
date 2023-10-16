@@ -11,6 +11,7 @@
               src="../../img/Dr/Prof._DR._dr._Starry_Rampengan,_Sp.JP(K),_MARS__.jpg"
               class="w-60 h-60 rounded-2xl"
               alt="doctor"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
@@ -18,6 +19,7 @@
               src="../../img/Dr/dr_Andrew_Ch._Pangemanan,_M.Kes.jpg"
               class="w-60 h-60 rounded-2xl"
               alt="doctor"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
@@ -25,6 +27,7 @@
               src="../../img/Dr/dr_Eunike_Pangemanan.jpg"
               class="w-60 h-60 rounded-2xl"
               alt="doctor"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
@@ -32,6 +35,7 @@
               src="../../img/Dr/dr_Heriyanis_Homenta_M.Biomed.jpg"
               class="w-60 h-60 rounded-2xl"
               alt="doctor"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
@@ -39,6 +43,7 @@
               src="../../img/Dr/dr_Jennifer_Setiono,SPOG,MARS.jpg"
               class="w-60 h-60 rounded-2xl"
               alt="doctor"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
@@ -46,6 +51,7 @@
               src="../../img/Dr/dr_Joel_Osbert,_Sp.OG.jpg"
               class="w-60 h-60 rounded-2xl"
               alt="doctor"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
@@ -53,6 +59,7 @@
               src="../../img/Dr/dr_Maria_Kaunang,_Sp.B_.jpg"
               class="w-60 h-60 rounded-2xl"
               alt="doctor"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
@@ -60,6 +67,7 @@
               src="../../img/Dr/dr_Meiske_Runkat,Sp.OG.jpg"
               class="w-60 h-60 rounded-2xl"
               alt="doctor"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
@@ -67,6 +75,7 @@
               src="../../img/Dr/dr_Pratama_Rawung.jpg"
               class="w-60 h-60 rounded-2xl"
               alt="doctor"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
@@ -74,6 +83,7 @@
               src="../../img/Dr/dr_Waldemar_Siahaan,_Sp.An.jpg"
               class="w-60 h-60 rounded-2xl"
               alt="doctor"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
@@ -81,6 +91,7 @@
               src="../../img/Dr/dr._Arthur_H_Rampengan,_Sp.PD.jpg"
               class="w-60 h-60 rounded-2xl"
               alt="doctor"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
@@ -88,6 +99,7 @@
               src="../../img/Dr/dr._Bisuk_P._Sedli_Sp.PD-KEMD.jpg"
               class="w-60 h-60 rounded-2xl"
               alt="doctor"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
@@ -95,6 +107,7 @@
               src="../../img/Dr/Dr._dr._Novie_Rampengan,_Sp.A(K).jpg"
               class="w-60 h-60 rounded-2xl"
               alt="doctor"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
@@ -102,11 +115,13 @@
               src="../../img/Dr/dr._Irene_Maryauw_Sp.A.jpg"
               class="w-60 h-60 rounded-2xl"
               alt="doctor"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
             <img
               src="../../img/Dr/dr._Jane_G._C._Metusala,_Sp.A.jpg"
+              loading="lazy"
               class="w-60 h-60 rounded-2xl"
               alt="doctor"
             />
@@ -116,6 +131,7 @@
               src="../../img/Dr/dr._Novita_Tanasal,_Sp.PD.jpg"
               class="w-60 h-60 rounded-2xl"
               alt="doctor"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
@@ -123,6 +139,7 @@
               src="../../img/Dr/dr._Yuniar_Pramulasari,_Sp.OG.jpg"
               class="w-60 h-60 rounded-2xl"
               alt="doctor"
+              loading="lazy"
             />
           </div>
         </div>

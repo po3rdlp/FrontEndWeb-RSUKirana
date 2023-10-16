@@ -71,6 +71,6 @@ import { BedIcon } from 'vue-tabler-icons'
 
 <style scoped>
 .img {
-  background-image: url('../components/img/Ruangan/RUANGAN1.jpeg');
+  background-image: url('../components/img/Ruangan/ruangan1-652c8bf907230.webp');
 }
 </style>
