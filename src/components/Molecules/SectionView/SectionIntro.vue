@@ -14,7 +14,7 @@
               <p class="mb-5 text-[12px] md:text-sm lg:text-2xl font-bold text-center">
                 ❝Menjadikan Setiap Momongan dan Ibu Sehat sebagai Prioritas Kami❞
               </p>
-              <RouterLink to="/about" class="btn btn-primary">TENTANG KAMI</RouterLink>
+              <RouterLink to="/about" class="btn btn-primary bg-[#cc0088]">TENTANG KAMI</RouterLink>
             </div>
           </div>
         </div>

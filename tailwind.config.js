@@ -75,7 +75,7 @@ module.exports = {
     extends: {}
   },
   daisyui: {
-    themes: ['light']
+    themes: ['acid']
   },
   // eslint-disable-next-line no-undef
   plugins: [require('daisyui')]

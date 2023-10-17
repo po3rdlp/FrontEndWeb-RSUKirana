@@ -56,16 +56,16 @@
         <p class="text text-3xl text-center">No Data</p>
       </div>
       <div v-if="!isLoading && data" class="flex justify-between pt-10">
-        <div>
+        <div class="space-x-3">
           <button
-            class="btn bg-gray-200 hover:bg-gray-400"
+            class="btn btn-sm bg-gray-200 hover:bg-gray-400"
             @click="previousPage"
             :disabled="currentPage === 0"
           >
             <ChevronLeftIcon />
           </button>
           <button
-            class="btn bg-gray-200 hover:bg-gray-400"
+            class="btn btn-sm bg-gray-200 hover:bg-gray-400"
             @click="nextPage"
             :disabled="currentPage === totalPages - 1"
           >

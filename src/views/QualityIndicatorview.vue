@@ -13,7 +13,7 @@
 
   <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-1">
     <div class="max-w-screen-md mb-2 lg:mb-5">
-      <h2 class="flex text-4xl font-extrabold items-center gap-3">
+      <h2 class="flex text-2xl lg:text-4xl font-extrabold items-center gap-3">
         <ListDetailsIcon /> INDIKATOR MUTU
       </h2>
     </div>
@@ -33,90 +33,178 @@
         anggota Komite Mutu.
       </p>
     </div>
-
-    <div class="grid gap-10 px-0 md:px-3 lg:px-5 mt-10">
-      <!-- Indikator Mutu Pertama -->
+    <!-- Indikator Mutu Pertama -->
+    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5 px-0 md:px-3 lg:px-5 mt-10">
       <div>
-        <h3 class="font-extrabold text-xl">1. Kepatuhan Kebersihan Tangan</h3>
+        <h3 class="font-semibold text-xs md:text-lg lg:text-xl">1. Kepatuhan Kebersihan Tangan</h3>
         <div class="grid gap-2 p-4">
           <img
             alt="Indikator-mutu-kebersihan-tangan"
-            src="../components/img/Indikator_mutu/indikator_mutu_kebersihan_tangan.png"
-            class="w-[500px]"
+            src="../components/img/Indikator_mutu/indikator_mutu_kebersihan.png"
+            class="w-[400px] lg:w-11/12"
           />
-          <img
-            alt="Indikator-mutu-kebersihan-tangan"
-            src="../components/img/Indikator_mutu/indikator_mutu_kebersihan_tangan2.png"
-            class="w-[500px]"
-          />
-        </div>
-
-        <div class="grid gap-3">
-          <div class="px-3">
-            <div>
-              <label class="label font-bold">Analisa :</label>
-              <ul class="list-disc ml-5">
-                <li>
-                  Dilihat dari capaian triwulan II bulan Mei – Juli 2023 sudah mencapai target
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="px-3">
-            <div>
-              <label class="label font-bold">Rencana Tindak Lanjut :</label>
-              <ul class="list-disc ml-5">
-                <li>Tetap melakukan supervisi kepatuhan cuci tangan.</li>
-                <li>Memantau ketersediaan dan distribusi fasilitas kebersihan tangan</li>
-                <li>Selalu memberikan sosialisasi pada orientasi pegawai baru</li>
-                <li>Mempertahankan Capaian</li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
 
       <!-- Indikator Mutu Kedua -->
       <div>
-        <h3 class="font-extrabold text-xl">2. Kepatuhan Penggunaan Alat Pelindung Diri (APD)</h3>
+        <h3 class="font-semibold text-xs md:text-lg lg:text-xl">
+          2. Kepatuhan Penggunaan Alat Pelindung Diri
+        </h3>
         <div class="grid gap-2 p-4">
           <img
             alt="Indikator-mutu-kepatuhan-penggunaan-apd"
             src="../components/img/Indikator_mutu/indikator_mutu_penggunaan_apd.png"
-            class="w-[500px]"
-          />
-          <img
-            alt="Indikator-mutu-kepatuhan-penggunaan-apd"
-            src="../components/img/Indikator_mutu/indikator_mutu_penggunaan_apd2.png"
-            class="w-[500px]"
+            class="w-[400px] lg:w-11/12"
           />
         </div>
+      </div>
 
-        <div class="grid gap-3">
-          <div class="px-3">
-            <div>
-              <label class="label font-bold">Analisa :</label>
-              <ul class="list-disc ml-5">
-                <li>
-                  Dilihat dari capaian triwulan II bulan Mei – Juli 2023 sudah mencapai target
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="px-3">
-            <div>
-              <label class="label font-bold">Rencana Tindak Lanjut :</label>
-              <ul class="list-disc ml-5">
-                <li>Tetap melakukan supervisi pemakaian APD</li>
-                <li>Memantau Ketersediaan dan distribusi APD di tiap unit</li>
-                <li>
-                  Selalu memberikan sosialisasi pada orientasi pegawai baru cara dan kapan
-                  penggunaan APD
-                </li>
-                <li>Mempertahankan Capaian</li>
-              </ul>
-            </div>
-          </div>
+      <!-- Indikator Mutu Ketiga -->
+      <div>
+        <h3 class="font-semibold text-xs md:text-lg lg:text-xl">
+          3. Kepatuhan Identifikasi Pasien
+        </h3>
+        <div class="grid gap-2 p-4">
+          <img
+            alt="Indikator-mutu-identifikasi-pasien"
+            src="../components/img/Indikator_mutu/indikator_mutu_identifikasi_pasien.png"
+            class="w-[400px] lg:w-11/12"
+          />
+        </div>
+      </div>
+
+      <!-- Indikator Mutu Keempat -->
+      <div>
+        <h3 class="font-semibold text-xs md:text-lg lg:text-xl">
+          4. Waktu Tanggap Seksio Caesarea Emergensi
+        </h3>
+        <div class="grid gap-2 p-4">
+          <img
+            alt="Indikator-mutu-waktu-tunggu-tanggap-seksio-ce"
+            src="../components/img/Indikator_mutu/indikator_mutu_waktu_tanggap_seksio_CE.png"
+            class="w-[400px] lg:w-11/12"
+          />
+        </div>
+      </div>
+
+      <!-- Indikator Mutu Kelima -->
+      <div>
+        <h3 class="font-semibold text-xs md:text-lg lg:text-xl">5. Waktu Tunggu Rawat Jalan</h3>
+        <div class="grid gap-2 p-4">
+          <img
+            alt="Indikator-mutu-waktu-tunggu-rajal"
+            src="../components/img/Indikator_mutu/indikato_mutu_waktu_tunggu_rajal.png"
+            class="w-[400px] lg:w-11/12"
+          />
+        </div>
+      </div>
+
+      <!-- Indikator Mutu Keenam -->
+      <div>
+        <h3 class="font-semibold text-xs md:text-lg lg:text-xl">6. Penundaan Opeerasi Elektif</h3>
+        <div class="grid gap-2 p-4">
+          <img
+            alt="Indikator-mutu-kepatuhan-penundaan-operasi-elektif"
+            src="../components/img/Indikator_mutu/indikator_mutu_penundaan_operasi_elektif.png"
+            class="w-[400px] lg:w-11/12"
+          />
+        </div>
+      </div>
+
+      <!-- Indikator Mutu Ketujuh -->
+      <div>
+        <h3 class="font-semibold text-xs md:text-lg lg:text-xl">
+          7. Kepatuhan Waktu Visite Dokter
+        </h3>
+        <div class="grid gap-2 p-4">
+          <img
+            alt="Indikator-mutu-kepatuhan-waktu-visit-dokter"
+            src="../components/img/Indikator_mutu/indikator_mutu_kepatuhan_waktu_visit_dokter.png"
+            class="w-[400px] lg:w-11/12"
+          />
+        </div>
+      </div>
+
+      <!-- Indikator Mutu Kedelapan -->
+      <div>
+        <h3 class="font-semibold text-xs md:text-lg lg:text-xl">
+          8. Pelaporan Hasil Kritis Laboratorium
+        </h3>
+        <div class="grid gap-2 p-4">
+          <img
+            alt="Indikator-mutu-kepatuhan-hasil-kritis-labor"
+            src="../components/img/Indikator_mutu/indikator_mutu_kepatuhan_hasil_kritis_labor.png"
+            class="w-[400px] lg:w-11/12"
+          />
+        </div>
+      </div>
+
+      <!-- Indikator Mutu Kesembilan -->
+      <div>
+        <h3 class="font-semibold text-xs md:text-lg lg:text-xl">
+          9. Kepatuhan penggunaan Formularium Nasional/Formularium RS
+        </h3>
+        <div class="grid gap-2 p-4">
+          <img
+            alt="Indikator-mutu-penggunaan-formularium-rs"
+            src="../components/img/Indikator_mutu/indaktor_mutu_pengunaan_formularium_nasional_rs.png"
+            class="w-[400px] lg:w-11/12"
+          />
+        </div>
+      </div>
+
+      <!-- Indikator Mutu Kesepuluh -->
+      <div>
+        <h3 class="font-semibold text-xs md:text-lg lg:text-xl">
+          10. Kepatuhan Terhadap Clinical Pathway
+        </h3>
+        <div class="grid gap-2 p-4">
+          <img
+            alt="Indikator-mutu-kepatuhan-clinical-pathway"
+            src="../components/img/Indikator_mutu/indikator_mutu_kepatuhan_terhadap_clinical_pathway.png"
+            class="w-[400px] lg:w-11/12"
+          />
+        </div>
+      </div>
+
+      <!-- Indikator Mutu Kesebelas -->
+      <div>
+        <h3 class="font-semibold text-xs md:text-lg lg:text-xl">
+          11. Kepatuhan Upaya Pencegahan Risiko Pasien Jatuh
+        </h3>
+        <div class="grid gap-2 p-4">
+          <img
+            alt="Indikator-mutu-pencegahan-pasien-jatuh"
+            src="../components/img/Indikator_mutu/indkator_mutu_kepatuhan_upaya_penecegahan_pasien_jatuh.png"
+            class="w-[400px] lg:w-11/12"
+          />
+        </div>
+      </div>
+
+      <!-- Indikator Mutu Keduabelas -->
+      <div>
+        <h3 class="font-semibold text-xs md:text-lg lg:text-xl">
+          12. Kecepatan Waktu Tanggap Terhadap Komplain
+        </h3>
+        <div class="grid gap-2 p-4">
+          <img
+            alt="Indikator-mutu-kecepatan-waktu-tanggap-komplain"
+            src="../components/img/Indikator_mutu/indikator_mutu_kecepatan_waktu_tanggap_komplain.png"
+            class="w-[400px] lg:w-11/12"
+          />
+        </div>
+      </div>
+
+      <!-- Indikator Mutu Ketigabelas -->
+      <div>
+        <h3 class="font-semibold text-xs md:text-lg lg:text-xl">13. Kepuasan Pasien</h3>
+        <div class="grid gap-2 p-4">
+          <img
+            alt="Indikator-mutu-kepuasan-pasien"
+            src="../components/img/Indikator_mutu/indikator_mutu_kepuasan_pasien.png"
+            class="w-[400px] lg:w-11/12"
+          />
         </div>
       </div>
     </div>

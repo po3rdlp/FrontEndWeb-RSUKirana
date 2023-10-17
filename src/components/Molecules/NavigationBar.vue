@@ -55,7 +55,7 @@
               </label>
               <ul
                 tabindex="0"
-                class="dropdown-content menu menu-md p-3 gap-3 shadow-2xl bg-base-200 w-56 rounded-sm"
+                class="dropdown-content menu menu-md p-3 gap-3 shadow-2xl bg-base-200 w-56 rounded-3xl"
                 v-if="toggleDropdown"
               >
                 <li class="flex justify-center">
