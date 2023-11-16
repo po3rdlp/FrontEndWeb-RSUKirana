@@ -1,5 +1,5 @@
 <template>
-  <div class="hero min-h-screen xl:h-full 2xl:h-full bg-base-200">
+  <div class="hero min-h-screen xl:h-full 2xl:h-full bg-gray-100">
     <div class="hero-content flex-col lg:flex-row-reverse">
       <div class="relative p-5 lg:p-10 headline">
         <img

@@ -2,9 +2,6 @@
 // eslint-disable-next-line no-undef
 module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-  fontFamily: {
-    sans: ['Inter', 'sans-serif']
-  },
   theme: {
     extend: {
       boxShadow: {
@@ -55,6 +52,9 @@ module.exports = {
           900: '#742A2A'
         }
       }
+    },
+    fontFamily: {
+      quickSand: ['Quicksand', 'sans-serif']
     },
     screens: {
       sm: '640px',

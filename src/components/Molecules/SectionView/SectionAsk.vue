@@ -40,7 +40,7 @@
           </div>
           <div class="form-control mt-6">
             <a aria-label="Chat on WhatsApp" :href="generateWhatsappLink" target="_blank">
-              <p class="btn btn-primary">Pesan</p>
+              <p class="btn btn-primary">Kirim</p>
             </a>
           </div>
         </div>

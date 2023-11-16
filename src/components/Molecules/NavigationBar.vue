@@ -76,7 +76,7 @@
                     </RouterLink></a
                   >
                 </li>
-                <li>
+                <!-- <li>
                   <a>
                     <RouterLink
                       to="/berita-informasi"
@@ -86,7 +86,7 @@
                       <span class="">PENGUMUMAN DAN BERITA</span>
                     </RouterLink></a
                   >
-                </li>
+                </li> -->
                 <li>
                   <a>
                     <RouterLink
@@ -115,7 +115,7 @@
           <li>
             <a @click="closeToggle">
               <RouterLink to="/about" class="btn btn-ghost" aria-current="page">
-                <span class="">Tentang Kami</span>
+                <span class="">TENTANG KAMI</span>
               </RouterLink></a
             >
           </li>

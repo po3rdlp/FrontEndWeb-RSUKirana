@@ -1,11 +1,11 @@
 <template>
-  <div class="hidden lg:block">
+  <div class="hidden lg:block font-quickSand">
     <UpperNavbar />
   </div>
-  <div class="sticky z-50 top-0 w-full shadow-xl">
+  <div class="sticky z-50 top-0 w-full shadow-xl font-quickSand">
     <NavigationBar />
   </div>
-  <div>
+  <div class="font-quickSand">
     <router-view v-slot="{ Component, route }">
       <Transition name="slide-fade" mode="out-in">
         <div :key="route.name">

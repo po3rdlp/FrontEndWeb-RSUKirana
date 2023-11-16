@@ -58,10 +58,10 @@
   </div>
 
   <div class="h-full w-full p-5">
-    <div class="hero h-full bg-base-200 headline">
+    <div class="hero h-full bg-base-100 headline">
       <div class="hero-content flex-col lg:flex-row" id="laboratorium">
         <img
-          src="https://placehold.co/800?text=No+Image+?&font=montserrat"
+          src="../components/img/Ruangan/new/lab_img.webp"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -75,10 +75,10 @@
         </div>
       </div>
     </div>
-    <div class="hero min-h-screen bg-base-200 headline">
+    <div class="hero min-h-screen bg-base-100 headline">
       <div class="hero-content flex-col lg:flex-row-reverse" id="ultrasonografi">
         <img
-          src="https://placehold.co/800?text=No+Image+?&font=montserrat"
+          src="../components/img/Ruangan/new/Ultrasonografi_img.webp"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -91,10 +91,10 @@
         </div>
       </div>
     </div>
-    <div class="hero h-full bg-base-200 headline">
+    <div class="hero h-full bg-base-100 headline">
       <div class="hero-content flex-col lg:flex-row" id="elektrokardiogram">
         <img
-          src="https://placehold.co/800?text=No+Image+?&font=montserrat"
+          src="../components/img/Ruangan/new/elektrokardiogram_img.webp"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -106,10 +106,10 @@
         </div>
       </div>
     </div>
-    <div class="hero min-h-screen bg-base-200 headline">
+    <div class="hero min-h-screen bg-base-100 headline">
       <div class="hero-content flex-col lg:flex-row-reverse" id="kardiotokografi">
         <img
-          src="https://placehold.co/800?text=No+Image+?&font=montserrat"
+          src="../components/img/Ruangan/new/Kardiotokografi_img.webp"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -121,7 +121,7 @@
         </div>
       </div>
     </div>
-    <div class="hero h-full bg-base-200 headline">
+    <div class="hero h-full bg-base-100 headline">
       <div class="hero-content flex-col lg:flex-row" id="ekokaridografi">
         <img
           src="../components/img/Ruangan/ekg-652c8bea714fa.webp"
@@ -138,10 +138,10 @@
         </div>
       </div>
     </div>
-    <div class="hero min-h-screen bg-base-200 headline">
+    <div class="hero min-h-screen bg-base-100 headline">
       <div class="hero-content flex-col lg:flex-row-reverse" id="holtermonitoring">
         <img
-          src="../components/img/Ruangan/holter-monitoring-652c8beb4dd9d.webp"
+          src="../components/img/Ruangan/new/holter_monitor_img.webp"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -153,10 +153,10 @@
         </div>
       </div>
     </div>
-    <div class="hero h-full bg-base-200 headline">
+    <div class="hero h-full bg-base-100 headline">
       <div class="hero-content flex-col lg:flex-row" id="treadmill">
         <img
-          src="../components/img/Ruangan/treadmil-652c8bfff10be.webp"
+          src="../components/img/Ruangan/new/Treadmill_img.webp"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
@@ -168,7 +168,7 @@
         </div>
       </div>
     </div>
-    <div class="hero min-h-screen bg-base-200 headline">
+    <div class="hero min-h-screen bg-base-100 headline">
       <div class="hero-content flex-col lg:flex-row-reverse" id="eecp">
         <img
           src="../components/img/Ruangan/eecp-652c8c025a50e.webp"
@@ -184,10 +184,10 @@
         </div>
       </div>
     </div>
-    <div class="hero h-full bg-base-200 headline">
+    <div class="hero h-full bg-base-100 headline">
       <div class="hero-content flex-col lg:flex-row" id="abpm">
         <img
-          src="https://placehold.co/800?text=No+Image+?&font=montserrat"
+          src="../components/img/Ruangan/new/ABPM_img.webp"
           class="w-56 md:w-96 lg:w-96 rounded-lg shadow-2xl"
         />
         <div>
